@@ -126,8 +126,9 @@
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
                     <suiteXmlFiles>
-                        <!--suppress UnresolvedMavenProperty -->
-                        <suiteXmlFile>${xmlFileName}</suiteXmlFile>
+                        <!-- 指定用例启动执行文件路径 -->
+<!--                        <suiteXmlFile>${xmlFileName}</suiteXmlFile>-->
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <workingDirectory>target/</workingDirectory>
                 </configuration>
