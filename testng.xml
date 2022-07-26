@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="test-parameter">
+    <test name="examplel">
+<!--        <classes>-->
+<!--            <class name="com.hxk.tesngDemo.TestDemo"/>-->
+<!--            <class name="com.hxk.tesngDemo.TestDemo2"/>-->
+<!--         </classes>-->
+        <!--如果有多个测试类，就写在这里，格式：包名.测试类名-->
+        <packages>
+            <package name="com.hxk.tesngDemo" />
+        </packages>
+    </test>
+</suite>

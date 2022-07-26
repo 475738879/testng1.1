@@ -1,0 +1,1829 @@
+Index: allure-results/4e2fd8fa-05d1-4403-96c6-704427e8e01d-result.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/4e2fd8fa-05d1-4403-96c6-704427e8e01d-result.json	(date 1657351780333)
++++ allure-results/4e2fd8fa-05d1-4403-96c6-704427e8e01d-result.json	(date 1657351780333)
+@@ -0,0 +1,1 @@
++{"name":"index","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1657351779055,"stop":1657351780262,"uuid":"4e2fd8fa-05d1-4403-96c6-704427e8e01d","historyId":"4635e239e02272ad70738f4269a29b74","fullName":"com.hxk.tesngDemo.index.index","labels":[{"name":"package","value":"com.hxk.tesngDemo.index"},{"name":"testClass","value":"com.hxk.tesngDemo.index"},{"name":"testMethod","value":"index"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"testng1.1"},{"name":"subSuite","value":"com.hxk.tesngDemo.index"},{"name":"host","value":"浪里个浪"},{"name":"thread","value":"28848@浪里个浪.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[]}
+\ No newline at end of file
+Index: allure-results/a2dc78fd-9623-4110-a145-7afc020f7c9c-result.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/a2dc78fd-9623-4110-a145-7afc020f7c9c-result.json	(date 1657351816817)
++++ allure-results/a2dc78fd-9623-4110-a145-7afc020f7c9c-result.json	(date 1657351816817)
+@@ -0,0 +1,1 @@
++{"name":"index","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1657351815626,"stop":1657351816735,"uuid":"a2dc78fd-9623-4110-a145-7afc020f7c9c","historyId":"4635e239e02272ad70738f4269a29b74","fullName":"com.hxk.tesngDemo.index.index","labels":[{"name":"package","value":"com.hxk.tesngDemo.index"},{"name":"testClass","value":"com.hxk.tesngDemo.index"},{"name":"testMethod","value":"index"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"testng1.1"},{"name":"subSuite","value":"com.hxk.tesngDemo.index"},{"name":"host","value":"浪里个浪"},{"name":"thread","value":"28248@浪里个浪.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[]}
+\ No newline at end of file
+Index: allure-results/c358d277-90da-457e-a6c3-418eb95a4409-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/c358d277-90da-457e-a6c3-418eb95a4409-container.json	(date 1657351816828)
++++ allure-results/c358d277-90da-457e-a6c3-418eb95a4409-container.json	(date 1657351816828)
+@@ -0,0 +1,1 @@
++{"uuid":"c358d277-90da-457e-a6c3-418eb95a4409","name":"Default Suite","children":["80145d26-4b61-4aaf-ab7c-a40a36fe0c17"],"befores":[],"afters":[],"links":[],"start":1657351815549,"stop":1657351816826}
+\ No newline at end of file
+Index: allure-results/b0206b61-bf93-4855-bbd9-9672d10450ac-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/b0206b61-bf93-4855-bbd9-9672d10450ac-container.json	(date 1657351816826)
++++ allure-results/b0206b61-bf93-4855-bbd9-9672d10450ac-container.json	(date 1657351816826)
+@@ -0,0 +1,1 @@
++{"uuid":"b0206b61-bf93-4855-bbd9-9672d10450ac","name":"com.hxk.tesngDemo.index","children":["a2dc78fd-9623-4110-a145-7afc020f7c9c"],"befores":[],"afters":[],"links":[],"start":1657351815555,"stop":1657351816825}
+\ No newline at end of file
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- pom.xml	(date 1657344779230)
++++ pom.xml	(date 1657344779230)
+@@ -0,0 +1,146 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0"
++         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++
++    <groupId>org.example</groupId>
++    <artifactId>testng1.1</artifactId>
++    <version>1.0-SNAPSHOT</version>
++
++    <dependencies>
++        <dependency>
++            <groupId>org.apache.httpcomponents</groupId>
++            <artifactId>httpclient</artifactId>
++            <version>4.5.9</version>
++        </dependency>
++
++        <dependency>
++            <groupId>org.apache.httpcomponents</groupId>
++            <artifactId>httpcore</artifactId>
++            <version>4.4.11</version>
++        </dependency>
++
++        <dependency>
++            <groupId>com.alibaba</groupId>
++            <artifactId>fastjson</artifactId>
++            <version>1.2.59</version>
++        </dependency>
++
++        <dependency>
++            <groupId>net.sf.json-lib</groupId>
++            <artifactId>json-lib</artifactId>
++            <version>2.4</version>
++            <classifier>jdk15</classifier>
++        </dependency>
++
++        <dependency>
++            <groupId>com.linkedin.pegasus</groupId>
++            <artifactId>test-util</artifactId>
++            <version>1.15.18</version>
++        </dependency>
++
++        <!-- https://mvnrepository.com/artifact/commons-httpclient/commons-httpclient -->
++        <dependency>
++            <groupId>commons-httpclient</groupId>
++            <artifactId>commons-httpclient</artifactId>
++            <version>3.1</version>
++        </dependency>
++
++        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
++        <dependency>
++            <groupId>commons-io</groupId>
++            <artifactId>commons-io</artifactId>
++            <version>2.6</version>
++        </dependency>
++
++        <dependency>
++            <groupId>org.slf4j</groupId>
++            <artifactId>slf4j-nop</artifactId>
++            <version>1.7.2</version>
++        </dependency>
++
++        <dependency>
++            <groupId>org.testng</groupId>
++            <artifactId>testng</artifactId>
++            <version>6.14.3</version>
++            <scope>compile</scope>
++        </dependency>
++
++        <!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
++        <dependency>
++            <groupId>com.relevantcodes</groupId>
++            <artifactId>extentreports</artifactId>
++            <version>2.41.0</version>
++        </dependency>
++
++        <dependency>
++            <groupId>com.vimalselvam</groupId>
++            <artifactId>testng-extentsreport</artifactId>
++            <version>1.3.1</version>
++        </dependency>
++
++        <dependency>
++            <groupId>com.jayway.jsonpath</groupId>
++            <artifactId>json-path</artifactId>
++            <version>2.3.0</version>
++        </dependency>
++
++        <!--引入extentreports相关包-->
++        <dependency>
++            <groupId>com.aventstack</groupId>
++            <artifactId>extentreports</artifactId>
++            <version>3.1.5</version>
++            <scope>provided</scope>
++        </dependency>
++
++        <dependency>
++            <groupId>io.qameta.allure</groupId>
++            <artifactId>allure-testng</artifactId>
++            <version>2.12.1</version>
++        </dependency>
++
++    </dependencies>
++    <build>
++        <plugins>
++            <plugin>
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-compiler-plugin</artifactId>
++                <version>3.8.1</version>
++                <configuration>
++                    <source>8</source>
++                    <target>8</target>
++                    <compilerArgs>
++                        <arg>-Xlint:unchecked</arg>
++                        <arg>-Xlint:deprecation </arg>
++                        <!--<arg>endorseddirs=${endorsed.dir}</arg>-->
++                    </compilerArgs>
++                </configuration>
++            </plugin>
++            <!-- 添加插件 关联testNg.xml-->
++            <plugin>
++                <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-surefire-plugin</artifactId>
++                <version>2.19</version>
++                <configuration>
++                    <testFailureIgnore>true</testFailureIgnore>
++                    <suiteXmlFiles>
++                        <!--suppress UnresolvedMavenProperty -->
++                        <suiteXmlFile>${xmlFileName}</suiteXmlFile>
++                    </suiteXmlFiles>
++                    <workingDirectory>target/</workingDirectory>
++                </configuration>
++            </plugin>
++        </plugins>
++    </build>
++
++    <properties>
++        <project.build.sourceEncoding>
++            UTF-8
++        </project.build.sourceEncoding>
++    </properties>
++
++
++
++</project>
+\ No newline at end of file
+Index: allure-results/1fb656a7-7c66-4a6f-a3c3-3c27bd202c04-result.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/1fb656a7-7c66-4a6f-a3c3-3c27bd202c04-result.json	(date 1657352015978)
++++ allure-results/1fb656a7-7c66-4a6f-a3c3-3c27bd202c04-result.json	(date 1657352015978)
+@@ -0,0 +1,1 @@
++{"name":"index","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1657352014644,"stop":1657352015904,"uuid":"1fb656a7-7c66-4a6f-a3c3-3c27bd202c04","historyId":"4635e239e02272ad70738f4269a29b74","fullName":"com.hxk.tesngDemo.index.index","labels":[{"name":"package","value":"com.hxk.tesngDemo.index"},{"name":"testClass","value":"com.hxk.tesngDemo.index"},{"name":"testMethod","value":"index"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"testng1.1"},{"name":"subSuite","value":"com.hxk.tesngDemo.index"},{"name":"host","value":"浪里个浪"},{"name":"thread","value":"25592@浪里个浪.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[]}
+\ No newline at end of file
+Index: allure-results/80145d26-4b61-4aaf-ab7c-a40a36fe0c17-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/80145d26-4b61-4aaf-ab7c-a40a36fe0c17-container.json	(date 1657351816823)
++++ allure-results/80145d26-4b61-4aaf-ab7c-a40a36fe0c17-container.json	(date 1657351816823)
+@@ -0,0 +1,1 @@
++{"uuid":"80145d26-4b61-4aaf-ab7c-a40a36fe0c17","name":"testng1.1","children":["a2dc78fd-9623-4110-a145-7afc020f7c9c"],"befores":[],"afters":[],"links":[],"start":1657351815551,"stop":1657351816819}
+\ No newline at end of file
+Index: allure-results/086deb10-444d-4adb-b9c9-9f3ade1ea823-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/086deb10-444d-4adb-b9c9-9f3ade1ea823-container.json	(date 1657352015989)
++++ allure-results/086deb10-444d-4adb-b9c9-9f3ade1ea823-container.json	(date 1657352015989)
+@@ -0,0 +1,1 @@
++{"uuid":"086deb10-444d-4adb-b9c9-9f3ade1ea823","name":"com.hxk.tesngDemo.index","children":["1fb656a7-7c66-4a6f-a3c3-3c27bd202c04"],"befores":[],"afters":[],"links":[],"start":1657352014573,"stop":1657352015986}
+\ No newline at end of file
+Index: allure-results/f13f4f13-9b63-468a-a87d-539d69a28f61-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/f13f4f13-9b63-468a-a87d-539d69a28f61-container.json	(date 1657352015990)
++++ allure-results/f13f4f13-9b63-468a-a87d-539d69a28f61-container.json	(date 1657352015990)
+@@ -0,0 +1,1 @@
++{"uuid":"f13f4f13-9b63-468a-a87d-539d69a28f61","name":"Default Suite","children":["edaa2407-61d4-4eab-b38f-a3a3ac3b46b4"],"befores":[],"afters":[],"links":[],"start":1657352014566,"stop":1657352015990}
+\ No newline at end of file
+Index: allure-results/c4aa7897-7189-494a-bf4b-342d3d0fd38d-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/c4aa7897-7189-494a-bf4b-342d3d0fd38d-container.json	(date 1657352262165)
++++ allure-results/c4aa7897-7189-494a-bf4b-342d3d0fd38d-container.json	(date 1657352262165)
+@@ -0,0 +1,1 @@
++{"uuid":"c4aa7897-7189-494a-bf4b-342d3d0fd38d","name":"Default Suite","children":["2754d91f-8fd8-4fd8-9df0-319ffb280796"],"befores":[],"afters":[],"links":[],"start":1657352260949,"stop":1657352262165}
+\ No newline at end of file
+Index: allure-results/edaa2407-61d4-4eab-b38f-a3a3ac3b46b4-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/edaa2407-61d4-4eab-b38f-a3a3ac3b46b4-container.json	(date 1657352015985)
++++ allure-results/edaa2407-61d4-4eab-b38f-a3a3ac3b46b4-container.json	(date 1657352015985)
+@@ -0,0 +1,1 @@
++{"uuid":"edaa2407-61d4-4eab-b38f-a3a3ac3b46b4","name":"testng1.1","children":["1fb656a7-7c66-4a6f-a3c3-3c27bd202c04"],"befores":[],"afters":[],"links":[],"start":1657352014568,"stop":1657352015981}
+\ No newline at end of file
+Index: allure-results/40d0b4c5-f4b0-496b-965c-5f1c7493f6bf-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/40d0b4c5-f4b0-496b-965c-5f1c7493f6bf-container.json	(date 1657352262164)
++++ allure-results/40d0b4c5-f4b0-496b-965c-5f1c7493f6bf-container.json	(date 1657352262164)
+@@ -0,0 +1,1 @@
++{"uuid":"40d0b4c5-f4b0-496b-965c-5f1c7493f6bf","name":"com.hxk.tesngDemo.index","children":["66cb0c3c-7fd1-4d27-bc1c-357fda6faa53"],"befores":[],"afters":[],"links":[],"start":1657352260957,"stop":1657352262163}
+\ No newline at end of file
+Index: allure-results/66cb0c3c-7fd1-4d27-bc1c-357fda6faa53-result.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/66cb0c3c-7fd1-4d27-bc1c-357fda6faa53-result.json	(date 1657352262157)
++++ allure-results/66cb0c3c-7fd1-4d27-bc1c-357fda6faa53-result.json	(date 1657352262157)
+@@ -0,0 +1,1 @@
++{"name":"index","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1657352261030,"stop":1657352262083,"uuid":"66cb0c3c-7fd1-4d27-bc1c-357fda6faa53","historyId":"4635e239e02272ad70738f4269a29b74","fullName":"com.hxk.tesngDemo.index.index","labels":[{"name":"package","value":"com.hxk.tesngDemo.index"},{"name":"testClass","value":"com.hxk.tesngDemo.index"},{"name":"testMethod","value":"index"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"testng1.1"},{"name":"subSuite","value":"com.hxk.tesngDemo.index"},{"name":"host","value":"浪里个浪"},{"name":"thread","value":"7240@浪里个浪.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[]}
+\ No newline at end of file
+Index: testng1.1.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- testng1.1.iml	(date 1657336512719)
++++ testng1.1.iml	(date 1657336512719)
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4" />
+\ No newline at end of file
+Index: allure-results/ca7bd3f9-3bb5-4f99-b583-b66aac8a5c05-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/ca7bd3f9-3bb5-4f99-b583-b66aac8a5c05-container.json	(date 1657352654267)
++++ allure-results/ca7bd3f9-3bb5-4f99-b583-b66aac8a5c05-container.json	(date 1657352654267)
+@@ -0,0 +1,1 @@
++{"uuid":"ca7bd3f9-3bb5-4f99-b583-b66aac8a5c05","name":"Default Suite","children":["ff1d4427-31e5-4750-ac6e-100ed8f08f9a"],"befores":[],"afters":[],"links":[],"start":1657352654200,"stop":1657352654267}
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(date 1657336507730)
++++ .idea/misc.xml	(date 1657336507730)
+@@ -0,0 +1,14 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ExternalStorageConfigurationManager" enabled="true" />
++  <component name="MavenProjectsManager">
++    <option name="originalFiles">
++      <list>
++        <option value="$PROJECT_DIR$/pom.xml" />
++      </list>
++    </option>
++  </component>
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: allure-results/2754d91f-8fd8-4fd8-9df0-319ffb280796-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/2754d91f-8fd8-4fd8-9df0-319ffb280796-container.json	(date 1657352262162)
++++ allure-results/2754d91f-8fd8-4fd8-9df0-319ffb280796-container.json	(date 1657352262162)
+@@ -0,0 +1,1 @@
++{"uuid":"2754d91f-8fd8-4fd8-9df0-319ffb280796","name":"testng1.1","children":["66cb0c3c-7fd1-4d27-bc1c-357fda6faa53"],"befores":[],"afters":[],"links":[],"start":1657352260952,"stop":1657352262158}
+\ No newline at end of file
+Index: allure-results/ae8bca20-a630-458d-9344-9661a7d7c8ab-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/ae8bca20-a630-458d-9344-9661a7d7c8ab-container.json	(date 1657352675094)
++++ allure-results/ae8bca20-a630-458d-9344-9661a7d7c8ab-container.json	(date 1657352675094)
+@@ -0,0 +1,1 @@
++{"uuid":"ae8bca20-a630-458d-9344-9661a7d7c8ab","name":"Default Suite","children":["9befbae4-232a-4847-b781-0eb3e8860ea2"],"befores":[],"afters":[],"links":[],"start":1657352675024,"stop":1657352675093}
+\ No newline at end of file
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/compiler.xml	(date 1658804114758)
++++ .idea/compiler.xml	(date 1658804114758)
+@@ -0,0 +1,18 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CompilerConfiguration">
++    <annotationProcessing>
++      <profile name="Maven default annotation processors profile" enabled="true">
++        <sourceOutputDir name="target/generated-sources/annotations" />
++        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
++        <outputRelativeToContentRoot value="true" />
++        <module name="testng1.1" />
++      </profile>
++    </annotationProcessing>
++  </component>
++  <component name="JavacSettings">
++    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
++      <module name="testng1.1" options="-Xlint:unchecked -Xlint:deprecation" />
++    </option>
++  </component>
++</project>
+\ No newline at end of file
+Index: allure-results/3a70df35-d786-42a1-b3b7-fa3c72814617-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/3a70df35-d786-42a1-b3b7-fa3c72814617-container.json	(date 1657352972740)
++++ allure-results/3a70df35-d786-42a1-b3b7-fa3c72814617-container.json	(date 1657352972740)
+@@ -0,0 +1,1 @@
++{"uuid":"3a70df35-d786-42a1-b3b7-fa3c72814617","name":"com.hxk.tesngDemo.index","children":["0dda43dd-b58c-4d9a-acd2-233972e1d57b"],"befores":[],"afters":[],"links":[],"start":1657352971407,"stop":1657352972739}
+\ No newline at end of file
+Index: allure-results/ff1d4427-31e5-4750-ac6e-100ed8f08f9a-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/ff1d4427-31e5-4750-ac6e-100ed8f08f9a-container.json	(date 1657352654265)
++++ allure-results/ff1d4427-31e5-4750-ac6e-100ed8f08f9a-container.json	(date 1657352654265)
+@@ -0,0 +1,1 @@
++{"uuid":"ff1d4427-31e5-4750-ac6e-100ed8f08f9a","name":"testng1.1","children":[],"befores":[],"afters":[],"links":[],"start":1657352654202,"stop":1657352654210}
+\ No newline at end of file
+Index: allure-results/da5b90c8-bee8-4c70-8d73-bb61fca7182a-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/da5b90c8-bee8-4c70-8d73-bb61fca7182a-container.json	(date 1657352687134)
++++ allure-results/da5b90c8-bee8-4c70-8d73-bb61fca7182a-container.json	(date 1657352687134)
+@@ -0,0 +1,1 @@
++{"uuid":"da5b90c8-bee8-4c70-8d73-bb61fca7182a","name":"Default Suite","children":["748cef19-b95e-4592-80aa-b3600c68ab9a"],"befores":[],"afters":[],"links":[],"start":1657352687062,"stop":1657352687133}
+\ No newline at end of file
+Index: testng.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- testng.xml	(date 1657353928925)
++++ testng.xml	(date 1657353928925)
+@@ -0,0 +1,13 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<suite name="test-parameter">
++    <test name="examplel">
++<!--        <classes>-->
++<!--            <class name="com.hxk.tesngDemo.TestDemo"/>-->
++<!--            <class name="com.hxk.tesngDemo.TestDemo2"/>-->
++<!--         </classes>-->
++        <!--如果有多个测试类，就写在这里，格式：包名.测试类名-->
++        <packages>
++            <package name="com.hxk.tesngDemo" />
++        </packages>
++    </test>
++</suite>
+\ No newline at end of file
+Index: allure-results/9befbae4-232a-4847-b781-0eb3e8860ea2-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/9befbae4-232a-4847-b781-0eb3e8860ea2-container.json	(date 1657352675090)
++++ allure-results/9befbae4-232a-4847-b781-0eb3e8860ea2-container.json	(date 1657352675090)
+@@ -0,0 +1,1 @@
++{"uuid":"9befbae4-232a-4847-b781-0eb3e8860ea2","name":"testng1.1","children":[],"befores":[],"afters":[],"links":[],"start":1657352675026,"stop":1657352675035}
+\ No newline at end of file
+Index: .idea/jarRepositories.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/jarRepositories.xml	(date 1657336512752)
++++ .idea/jarRepositories.xml	(date 1657336512752)
+@@ -0,0 +1,20 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="RemoteRepositoriesConfiguration">
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Central Repository" />
++      <option name="url" value="https://repo.maven.apache.org/maven2" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Maven Central repository" />
++      <option name="url" value="https://repo1.maven.org/maven2" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="jboss.community" />
++      <option name="name" value="JBoss Community repository" />
++      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
++    </remote-repository>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/.gitignore	(date 1657336530149)
++++ .idea/.gitignore	(date 1657336530149)
+@@ -0,0 +1,8 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
++# Editor-based HTTP Client requests
++/httpRequests/
+Index: allure-results/748cef19-b95e-4592-80aa-b3600c68ab9a-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/748cef19-b95e-4592-80aa-b3600c68ab9a-container.json	(date 1657352687131)
++++ allure-results/748cef19-b95e-4592-80aa-b3600c68ab9a-container.json	(date 1657352687131)
+@@ -0,0 +1,1 @@
++{"uuid":"748cef19-b95e-4592-80aa-b3600c68ab9a","name":"testng1.1","children":[],"befores":[],"afters":[],"links":[],"start":1657352687065,"stop":1657352687073}
+\ No newline at end of file
+Index: allure-results/bf44b679-1399-4a93-9445-23d77c8895f0-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/bf44b679-1399-4a93-9445-23d77c8895f0-container.json	(date 1657352713568)
++++ allure-results/bf44b679-1399-4a93-9445-23d77c8895f0-container.json	(date 1657352713568)
+@@ -0,0 +1,1 @@
++{"uuid":"bf44b679-1399-4a93-9445-23d77c8895f0","name":"com.hxk.tesngDemo.index","children":["36165b00-495d-46a1-9b78-7e317e8bdfef"],"befores":[],"afters":[],"links":[],"start":1657352712214,"stop":1657352713567}
+\ No newline at end of file
+Index: allure-results/00853dfa-604d-4dfd-9524-4044294eb364-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/00853dfa-604d-4dfd-9524-4044294eb364-container.json	(date 1657352713569)
++++ allure-results/00853dfa-604d-4dfd-9524-4044294eb364-container.json	(date 1657352713569)
+@@ -0,0 +1,1 @@
++{"uuid":"00853dfa-604d-4dfd-9524-4044294eb364","name":"Default Suite","children":["2a1ba6af-7413-4e82-9f32-9e0b9f6d9a46"],"befores":[],"afters":[],"links":[],"start":1657352712208,"stop":1657352713569}
+\ No newline at end of file
+Index: allure-results/36165b00-495d-46a1-9b78-7e317e8bdfef-result.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/36165b00-495d-46a1-9b78-7e317e8bdfef-result.json	(date 1657352713561)
++++ allure-results/36165b00-495d-46a1-9b78-7e317e8bdfef-result.json	(date 1657352713561)
+@@ -0,0 +1,1 @@
++{"name":"index","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1657352712290,"stop":1657352713488,"uuid":"36165b00-495d-46a1-9b78-7e317e8bdfef","historyId":"4635e239e02272ad70738f4269a29b74","fullName":"com.hxk.tesngDemo.index.index","labels":[{"name":"package","value":"com.hxk.tesngDemo.index"},{"name":"testClass","value":"com.hxk.tesngDemo.index"},{"name":"testMethod","value":"index"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"testng1.1"},{"name":"subSuite","value":"com.hxk.tesngDemo.index"},{"name":"host","value":"浪里个浪"},{"name":"thread","value":"27716@浪里个浪.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[]}
+\ No newline at end of file
+Index: allure-results/2a1ba6af-7413-4e82-9f32-9e0b9f6d9a46-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/2a1ba6af-7413-4e82-9f32-9e0b9f6d9a46-container.json	(date 1657352713566)
++++ allure-results/2a1ba6af-7413-4e82-9f32-9e0b9f6d9a46-container.json	(date 1657352713566)
+@@ -0,0 +1,1 @@
++{"uuid":"2a1ba6af-7413-4e82-9f32-9e0b9f6d9a46","name":"testng1.1","children":["36165b00-495d-46a1-9b78-7e317e8bdfef"],"befores":[],"afters":[],"links":[],"start":1657352712210,"stop":1657352713562}
+\ No newline at end of file
+Index: allure-results/db8b8397-53c9-4aa3-9726-30209b771d47-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/db8b8397-53c9-4aa3-9726-30209b771d47-container.json	(date 1657352747502)
++++ allure-results/db8b8397-53c9-4aa3-9726-30209b771d47-container.json	(date 1657352747502)
+@@ -0,0 +1,1 @@
++{"uuid":"db8b8397-53c9-4aa3-9726-30209b771d47","name":"Default Suite","children":["75586dfa-a726-4ae2-8821-ffbd6ade2a49"],"befores":[],"afters":[],"links":[],"start":1657352746099,"stop":1657352747502}
+\ No newline at end of file
+Index: src/test/java/com/hxk/tesngDemo/TestDemo2.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/java/com/hxk/tesngDemo/TestDemo2.java	(date 1657353957548)
++++ src/test/java/com/hxk/tesngDemo/TestDemo2.java	(date 1657353957548)
+@@ -0,0 +1,10 @@
++package com.hxk.tesngDemo;
++
++import org.testng.annotations.Test;
++
++public class TestDemo2 {
++    @Test(enabled = false)
++    public void test2(){
++        System.out.println("test2_1");
++    }
++}
+Index: allure-results/b1542fec-5ab6-4825-bb75-584d7b1bafd1-result.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/b1542fec-5ab6-4825-bb75-584d7b1bafd1-result.json	(date 1657352747493)
++++ allure-results/b1542fec-5ab6-4825-bb75-584d7b1bafd1-result.json	(date 1657352747493)
+@@ -0,0 +1,1 @@
++{"name":"index","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1657352746177,"stop":1657352747422,"uuid":"b1542fec-5ab6-4825-bb75-584d7b1bafd1","historyId":"4635e239e02272ad70738f4269a29b74","fullName":"com.hxk.tesngDemo.index.index","labels":[{"name":"package","value":"com.hxk.tesngDemo.index"},{"name":"testClass","value":"com.hxk.tesngDemo.index"},{"name":"testMethod","value":"index"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"testng1.1"},{"name":"subSuite","value":"com.hxk.tesngDemo.index"},{"name":"host","value":"浪里个浪"},{"name":"thread","value":"22632@浪里个浪.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[]}
+\ No newline at end of file
+Index: src/test/java/com/hxk/tesngDemo/TestDemo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/java/com/hxk/tesngDemo/TestDemo.java	(date 1657353957554)
++++ src/test/java/com/hxk/tesngDemo/TestDemo.java	(date 1657353957554)
+@@ -0,0 +1,10 @@
++package com.hxk.tesngDemo;
++
++import org.testng.annotations.Test;
++
++public class TestDemo {
++    @Test(enabled = false)
++    public void test1(){
++        System.out.println("test1_1");
++    }
++}
+Index: allure-results/75586dfa-a726-4ae2-8821-ffbd6ade2a49-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/75586dfa-a726-4ae2-8821-ffbd6ade2a49-container.json	(date 1657352747499)
++++ allure-results/75586dfa-a726-4ae2-8821-ffbd6ade2a49-container.json	(date 1657352747499)
+@@ -0,0 +1,1 @@
++{"uuid":"75586dfa-a726-4ae2-8821-ffbd6ade2a49","name":"testng1.1","children":["b1542fec-5ab6-4825-bb75-584d7b1bafd1"],"befores":[],"afters":[],"links":[],"start":1657352746101,"stop":1657352747495}
+\ No newline at end of file
+Index: allure-results/a286d555-2bad-436e-8446-022e9c1b124d-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/a286d555-2bad-436e-8446-022e9c1b124d-container.json	(date 1657352747501)
++++ allure-results/a286d555-2bad-436e-8446-022e9c1b124d-container.json	(date 1657352747501)
+@@ -0,0 +1,1 @@
++{"uuid":"a286d555-2bad-436e-8446-022e9c1b124d","name":"com.hxk.tesngDemo.index","children":["b1542fec-5ab6-4825-bb75-584d7b1bafd1"],"befores":[],"afters":[],"links":[],"start":1657352746105,"stop":1657352747500}
+\ No newline at end of file
+Index: .idea/uiDesigner.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/uiDesigner.xml	(date 1657337339910)
++++ .idea/uiDesigner.xml	(date 1657337339910)
+@@ -0,0 +1,124 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Palette2">
++    <group name="Swing">
++      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />
++      </item>
++      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />
++      </item>
++      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.png" removable="false" auto-create-binding="false" can-attach-label="true">
++        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />
++        <initial-values>
++          <property name="text" value="Button" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="RadioButton" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="CheckBox" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="Label" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
++          <preferred-size width="200" height="200" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
++          <preferred-size width="200" height="200" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />
++      </item>
++      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">
++          <preferred-size width="-1" height="20" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />
++      </item>
++      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
++      </item>
++    </group>
++  </component>
++</project>
+\ No newline at end of file
+Index: allure-results/65936169-1783-4f9c-b662-936bb106afdc-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/65936169-1783-4f9c-b662-936bb106afdc-container.json	(date 1657352833777)
++++ allure-results/65936169-1783-4f9c-b662-936bb106afdc-container.json	(date 1657352833777)
+@@ -0,0 +1,1 @@
++{"uuid":"65936169-1783-4f9c-b662-936bb106afdc","name":"testng1.1","children":["55cec175-ebc4-49a8-9a3e-a153dbe3e6a7"],"befores":[],"afters":[],"links":[],"start":1657352832476,"stop":1657352833772}
+\ No newline at end of file
+Index: allure-results/cb94e70f-9c25-48f9-b4d1-b853c3288a6f-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/cb94e70f-9c25-48f9-b4d1-b853c3288a6f-container.json	(date 1657352833779)
++++ allure-results/cb94e70f-9c25-48f9-b4d1-b853c3288a6f-container.json	(date 1657352833779)
+@@ -0,0 +1,1 @@
++{"uuid":"cb94e70f-9c25-48f9-b4d1-b853c3288a6f","name":"com.hxk.tesngDemo.index","children":["55cec175-ebc4-49a8-9a3e-a153dbe3e6a7"],"befores":[],"afters":[],"links":[],"start":1657352832480,"stop":1657352833778}
+\ No newline at end of file
+Index: allure-results/55cec175-ebc4-49a8-9a3e-a153dbe3e6a7-result.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/55cec175-ebc4-49a8-9a3e-a153dbe3e6a7-result.json	(date 1657352833771)
++++ allure-results/55cec175-ebc4-49a8-9a3e-a153dbe3e6a7-result.json	(date 1657352833771)
+@@ -0,0 +1,1 @@
++{"name":"index","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1657352832556,"stop":1657352833700,"uuid":"55cec175-ebc4-49a8-9a3e-a153dbe3e6a7","historyId":"4635e239e02272ad70738f4269a29b74","fullName":"com.hxk.tesngDemo.index.index","labels":[{"name":"package","value":"com.hxk.tesngDemo.index"},{"name":"testClass","value":"com.hxk.tesngDemo.index"},{"name":"testMethod","value":"index"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"testng1.1"},{"name":"subSuite","value":"com.hxk.tesngDemo.index"},{"name":"host","value":"浪里个浪"},{"name":"thread","value":"9484@浪里个浪.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[]}
+\ No newline at end of file
+Index: allure-results/90e0d487-ac35-434b-b8d2-6a0208ccff33-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/90e0d487-ac35-434b-b8d2-6a0208ccff33-container.json	(date 1657352833781)
++++ allure-results/90e0d487-ac35-434b-b8d2-6a0208ccff33-container.json	(date 1657352833781)
+@@ -0,0 +1,1 @@
++{"uuid":"90e0d487-ac35-434b-b8d2-6a0208ccff33","name":"Default Suite","children":["65936169-1783-4f9c-b662-936bb106afdc"],"befores":[],"afters":[],"links":[],"start":1657352832473,"stop":1657352833780}
+\ No newline at end of file
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .gitignore	(date 1658813682375)
++++ .gitignore	(date 1658813682375)
+@@ -0,0 +1,2 @@
++# Project exclude paths
++/target/
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/vcs.xml	(date 1658813681603)
++++ .idea/vcs.xml	(date 1658813681603)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: allure-results/ee920ae3-be8b-45a7-ab67-457c0abd9b1e-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/ee920ae3-be8b-45a7-ab67-457c0abd9b1e-container.json	(date 1657353961427)
++++ allure-results/ee920ae3-be8b-45a7-ab67-457c0abd9b1e-container.json	(date 1657353961427)
+@@ -0,0 +1,1 @@
++{"uuid":"ee920ae3-be8b-45a7-ab67-457c0abd9b1e","name":"test-parameter","children":["146aebd0-ffd0-4078-950a-9cd45d612d8c"],"befores":[],"afters":[],"links":[],"start":1657353959863,"stop":1657353961426}
+\ No newline at end of file
+Index: allure-results/fe1c8078-602c-425d-baf3-8f13460df339-result.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/fe1c8078-602c-425d-baf3-8f13460df339-result.json	(date 1657353959994)
++++ allure-results/fe1c8078-602c-425d-baf3-8f13460df339-result.json	(date 1657353959994)
+@@ -0,0 +1,1 @@
++{"name":"test1","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1657353959992,"stop":1657353959992,"uuid":"fe1c8078-602c-425d-baf3-8f13460df339","historyId":"cfbb66a72e734ee17a499ed7d187df67","fullName":"com.hxk.tesngDemo.TestDemo.test1","labels":[{"name":"package","value":"com.hxk.tesngDemo.TestDemo"},{"name":"testClass","value":"com.hxk.tesngDemo.TestDemo"},{"name":"testMethod","value":"test1"},{"name":"parentSuite","value":"test-parameter"},{"name":"suite","value":"examplel"},{"name":"subSuite","value":"com.hxk.tesngDemo.TestDemo"},{"name":"host","value":"浪里个浪"},{"name":"thread","value":"23132@浪里个浪.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[]}
+\ No newline at end of file
+Index: allure-results/896a383e-2637-4a34-b8fa-ad5641d8e504-result.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/896a383e-2637-4a34-b8fa-ad5641d8e504-result.json	(date 1657353961419)
++++ allure-results/896a383e-2637-4a34-b8fa-ad5641d8e504-result.json	(date 1657353961419)
+@@ -0,0 +1,1 @@
++{"name":"index","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1657353960013,"stop":1657353961418,"uuid":"896a383e-2637-4a34-b8fa-ad5641d8e504","historyId":"4635e239e02272ad70738f4269a29b74","fullName":"com.hxk.tesngDemo.index.index","labels":[{"name":"package","value":"com.hxk.tesngDemo.index"},{"name":"testClass","value":"com.hxk.tesngDemo.index"},{"name":"testMethod","value":"index"},{"name":"parentSuite","value":"test-parameter"},{"name":"suite","value":"examplel"},{"name":"subSuite","value":"com.hxk.tesngDemo.index"},{"name":"host","value":"浪里个浪"},{"name":"thread","value":"23132@浪里个浪.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[]}
+\ No newline at end of file
+Index: allure-results/146aebd0-ffd0-4078-950a-9cd45d612d8c-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/146aebd0-ffd0-4078-950a-9cd45d612d8c-container.json	(date 1657353961424)
++++ allure-results/146aebd0-ffd0-4078-950a-9cd45d612d8c-container.json	(date 1657353961424)
+@@ -0,0 +1,1 @@
++{"uuid":"146aebd0-ffd0-4078-950a-9cd45d612d8c","name":"examplel","children":["896a383e-2637-4a34-b8fa-ad5641d8e504"],"befores":[],"afters":[],"links":[],"start":1657353959867,"stop":1657353961420}
+\ No newline at end of file
+Index: allure-results/a15da590-5a0d-49d8-982e-89c0bd17ed8a-result.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/a15da590-5a0d-49d8-982e-89c0bd17ed8a-result.json	(date 1657353959990)
++++ allure-results/a15da590-5a0d-49d8-982e-89c0bd17ed8a-result.json	(date 1657353959990)
+@@ -0,0 +1,1 @@
++{"name":"test2","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1657353959925,"stop":1657353959926,"uuid":"a15da590-5a0d-49d8-982e-89c0bd17ed8a","historyId":"d06e9503f4957b94a37ae9210cf9dbfd","fullName":"com.hxk.tesngDemo.TestDemo2.test2","labels":[{"name":"package","value":"com.hxk.tesngDemo.TestDemo2"},{"name":"testClass","value":"com.hxk.tesngDemo.TestDemo2"},{"name":"testMethod","value":"test2"},{"name":"parentSuite","value":"test-parameter"},{"name":"suite","value":"examplel"},{"name":"subSuite","value":"com.hxk.tesngDemo.TestDemo2"},{"name":"host","value":"浪里个浪"},{"name":"thread","value":"23132@浪里个浪.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[]}
+\ No newline at end of file
+Index: allure-results/f74f8cf9-34e2-41bf-92bc-ef1da708d31b-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/f74f8cf9-34e2-41bf-92bc-ef1da708d31b-container.json	(date 1657353961426)
++++ allure-results/f74f8cf9-34e2-41bf-92bc-ef1da708d31b-container.json	(date 1657353961426)
+@@ -0,0 +1,1 @@
++{"uuid":"f74f8cf9-34e2-41bf-92bc-ef1da708d31b","name":"com.hxk.tesngDemo.index","children":["896a383e-2637-4a34-b8fa-ad5641d8e504"],"befores":[],"afters":[],"links":[],"start":1657353959870,"stop":1657353961425}
+\ No newline at end of file
+Index: allure-results/7e3a00b1-fd7f-436c-abf5-434546342cc2-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/7e3a00b1-fd7f-436c-abf5-434546342cc2-container.json	(date 1657353731254)
++++ allure-results/7e3a00b1-fd7f-436c-abf5-434546342cc2-container.json	(date 1657353731254)
+@@ -0,0 +1,1 @@
++{"uuid":"7e3a00b1-fd7f-436c-abf5-434546342cc2","name":"testng1.1","children":["7a6ca8a4-488d-403d-9aba-5f57ffbde1c1"],"befores":[],"afters":[],"links":[],"start":1657353729803,"stop":1657353731250}
+\ No newline at end of file
+Index: allure-results/2bf0ba98-4c89-47ef-a0b9-222e31b2ce55-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/2bf0ba98-4c89-47ef-a0b9-222e31b2ce55-container.json	(date 1657353731258)
++++ allure-results/2bf0ba98-4c89-47ef-a0b9-222e31b2ce55-container.json	(date 1657353731258)
+@@ -0,0 +1,1 @@
++{"uuid":"2bf0ba98-4c89-47ef-a0b9-222e31b2ce55","name":"Default Suite","children":["7e3a00b1-fd7f-436c-abf5-434546342cc2"],"befores":[],"afters":[],"links":[],"start":1657353729800,"stop":1657353731257}
+\ No newline at end of file
+Index: allure-results/2053d1c3-d4cd-4d09-8c63-fd65477bec5c-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/2053d1c3-d4cd-4d09-8c63-fd65477bec5c-container.json	(date 1657353731256)
++++ allure-results/2053d1c3-d4cd-4d09-8c63-fd65477bec5c-container.json	(date 1657353731256)
+@@ -0,0 +1,1 @@
++{"uuid":"2053d1c3-d4cd-4d09-8c63-fd65477bec5c","name":"com.hxk.tesngDemo.index","children":["7a6ca8a4-488d-403d-9aba-5f57ffbde1c1"],"befores":[],"afters":[],"links":[],"start":1657353729808,"stop":1657353731256}
+\ No newline at end of file
+Index: allure-results/7a6ca8a4-488d-403d-9aba-5f57ffbde1c1-result.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/7a6ca8a4-488d-403d-9aba-5f57ffbde1c1-result.json	(date 1657353731248)
++++ allure-results/7a6ca8a4-488d-403d-9aba-5f57ffbde1c1-result.json	(date 1657353731248)
+@@ -0,0 +1,1 @@
++{"name":"index","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1657353729876,"stop":1657353731170,"uuid":"7a6ca8a4-488d-403d-9aba-5f57ffbde1c1","historyId":"4635e239e02272ad70738f4269a29b74","fullName":"com.hxk.tesngDemo.index.index","labels":[{"name":"package","value":"com.hxk.tesngDemo.index"},{"name":"testClass","value":"com.hxk.tesngDemo.index"},{"name":"testMethod","value":"index"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"testng1.1"},{"name":"subSuite","value":"com.hxk.tesngDemo.index"},{"name":"host","value":"浪里个浪"},{"name":"thread","value":"25956@浪里个浪.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[]}
+\ No newline at end of file
+Index: allure-results/9b8b4d38-42ca-4560-a9ac-7d2e2ca16d8d-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/9b8b4d38-42ca-4560-a9ac-7d2e2ca16d8d-container.json	(date 1657353326964)
++++ allure-results/9b8b4d38-42ca-4560-a9ac-7d2e2ca16d8d-container.json	(date 1657353326964)
+@@ -0,0 +1,1 @@
++{"uuid":"9b8b4d38-42ca-4560-a9ac-7d2e2ca16d8d","name":"com.hxk.tesngDemo.index","children":["564d3841-4de9-49a4-b100-eae702dfea5c"],"befores":[],"afters":[],"links":[],"start":1657353326085,"stop":1657353326962}
+\ No newline at end of file
+Index: allure-results/1f7b1145-8e66-43c6-a72b-4b6d44e057bd-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/1f7b1145-8e66-43c6-a72b-4b6d44e057bd-container.json	(date 1657353326965)
++++ allure-results/1f7b1145-8e66-43c6-a72b-4b6d44e057bd-container.json	(date 1657353326965)
+@@ -0,0 +1,1 @@
++{"uuid":"1f7b1145-8e66-43c6-a72b-4b6d44e057bd","name":"Default Suite","children":["aa09cb66-8269-4a89-be77-ef297cbb78ae"],"befores":[],"afters":[],"links":[],"start":1657353326079,"stop":1657353326964}
+\ No newline at end of file
+Index: allure-results/aa09cb66-8269-4a89-be77-ef297cbb78ae-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/aa09cb66-8269-4a89-be77-ef297cbb78ae-container.json	(date 1657353326961)
++++ allure-results/aa09cb66-8269-4a89-be77-ef297cbb78ae-container.json	(date 1657353326961)
+@@ -0,0 +1,1 @@
++{"uuid":"aa09cb66-8269-4a89-be77-ef297cbb78ae","name":"testng1.1","children":["564d3841-4de9-49a4-b100-eae702dfea5c"],"befores":[],"afters":[],"links":[],"start":1657353326082,"stop":1657353326956}
+\ No newline at end of file
+Index: allure-results/564d3841-4de9-49a4-b100-eae702dfea5c-result.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/564d3841-4de9-49a4-b100-eae702dfea5c-result.json	(date 1657353326955)
++++ allure-results/564d3841-4de9-49a4-b100-eae702dfea5c-result.json	(date 1657353326955)
+@@ -0,0 +1,1 @@
++{"name":"index","status":"broken","statusDetails":{"known":false,"muted":false,"flaky":false,"message":"java.lang.NullPointerException","trace":"java.lang.NullPointerException\r\n\tat com.hxk.tesngDemo.login.login(login.java:90)\r\n\tat com.hxk.tesngDemo.index.index(index.java:24)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)\r\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:583)\r\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)\r\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:648)\r\n\tat org.testng.TestRunner.run(TestRunner.java:505)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:455)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:364)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1137)\r\n\tat org.testng.TestNG.runSuites(TestNG.java:1049)\r\n\tat org.testng.TestNG.run(TestNG.java:1017)\r\n\tat com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)\r\n\tat com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)\r\n"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1657353326160,"stop":1657353326880,"uuid":"564d3841-4de9-49a4-b100-eae702dfea5c","historyId":"4635e239e02272ad70738f4269a29b74","fullName":"com.hxk.tesngDemo.index.index","labels":[{"name":"package","value":"com.hxk.tesngDemo.index"},{"name":"testClass","value":"com.hxk.tesngDemo.index"},{"name":"testMethod","value":"index"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"testng1.1"},{"name":"subSuite","value":"com.hxk.tesngDemo.index"},{"name":"host","value":"浪里个浪"},{"name":"thread","value":"27140@浪里个浪.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[]}
+\ No newline at end of file
+Index: allure-results/763923df-aa97-45bf-ae34-2379d08ca3c1-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/763923df-aa97-45bf-ae34-2379d08ca3c1-container.json	(date 1657352972741)
++++ allure-results/763923df-aa97-45bf-ae34-2379d08ca3c1-container.json	(date 1657352972741)
+@@ -0,0 +1,1 @@
++{"uuid":"763923df-aa97-45bf-ae34-2379d08ca3c1","name":"Default Suite","children":["d2fed9b0-5ff3-40d4-83a4-98686924479e"],"befores":[],"afters":[],"links":[],"start":1657352971398,"stop":1657352972740}
+\ No newline at end of file
+Index: allure-results/d2fed9b0-5ff3-40d4-83a4-98686924479e-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/d2fed9b0-5ff3-40d4-83a4-98686924479e-container.json	(date 1657352972738)
++++ allure-results/d2fed9b0-5ff3-40d4-83a4-98686924479e-container.json	(date 1657352972738)
+@@ -0,0 +1,1 @@
++{"uuid":"d2fed9b0-5ff3-40d4-83a4-98686924479e","name":"testng1.1","children":["0dda43dd-b58c-4d9a-acd2-233972e1d57b"],"befores":[],"afters":[],"links":[],"start":1657352971401,"stop":1657352972734}
+\ No newline at end of file
+Index: allure-results/0dda43dd-b58c-4d9a-acd2-233972e1d57b-result.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/0dda43dd-b58c-4d9a-acd2-233972e1d57b-result.json	(date 1657352972732)
++++ allure-results/0dda43dd-b58c-4d9a-acd2-233972e1d57b-result.json	(date 1657352972732)
+@@ -0,0 +1,1 @@
++{"name":"index","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1657352971506,"stop":1657352972663,"uuid":"0dda43dd-b58c-4d9a-acd2-233972e1d57b","historyId":"4635e239e02272ad70738f4269a29b74","fullName":"com.hxk.tesngDemo.index.index","labels":[{"name":"package","value":"com.hxk.tesngDemo.index"},{"name":"testClass","value":"com.hxk.tesngDemo.index"},{"name":"testMethod","value":"index"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"testng1.1"},{"name":"subSuite","value":"com.hxk.tesngDemo.index"},{"name":"host","value":"浪里个浪"},{"name":"thread","value":"24920@浪里个浪.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[]}
+\ No newline at end of file
+Index: .idea/encodings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/encodings.xml	(date 1657344733722)
++++ .idea/encodings.xml	(date 1657344733722)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Encoding">
++    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
++    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
++  </component>
++</project>
+\ No newline at end of file
+Index: src/test/java/com/methodpackage/restclient/restclient.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/java/com/methodpackage/restclient/restclient.java	(date 1657344904781)
++++ src/test/java/com/methodpackage/restclient/restclient.java	(date 1657344904781)
+@@ -0,0 +1,59 @@
++package com.methodpackage.restclient;
++
++import java.io.IOException;
++import com.methodpackage.basic.testbasic;
++import org.apache.http.client.ClientProtocolException;
++import org.apache.http.client.config.RequestConfig;
++import org.apache.http.client.methods.CloseableHttpResponse;
++import org.apache.http.client.methods.HttpGet;
++import org.apache.http.impl.client.CloseableHttpClient;
++import org.apache.http.impl.client.HttpClients;
++import org.apache.http.Header;
++import org.testng.Assert;
++import java.util.HashMap;
++
++
++public class restclient extends testbasic {
++
++    // Get请求
++    public CloseableHttpResponse get(String url) throws ClientProtocolException, IOException {
++
++        // 创建一个可关闭的HttpClient对象
++        CloseableHttpClient httpclient = HttpClients.createDefault();
++
++        // 创建一个HttpGet的请求对象
++        HttpGet httpget = new HttpGet(url);
++
++        // 执行请求,相当于postman上点击发送按钮，然后赋值给HttpResponse对象接收
++        CloseableHttpResponse httpResponse = httpclient.execute(httpget);
++
++        // 设置超时时间
++        RequestConfig requestConfig = RequestConfig.custom()
++                .setSocketTimeout(2000)
++                .setConnectionRequestTimeout(2000)
++                .build();
++        httpget.setConfig(requestConfig);
++
++        // 添加断言，获取服务器响应的状态码
++        int statusCode = httpResponse.getStatusLine().getStatusCode();
++        Assert.assertEquals(statusCode, RESPNSE_STATUS_CODE_200, "服务器返回的状态码不是200");
++        System.out.println("服务器响应的状态码为：" + statusCode);
++
++        // 获取响应头信息,返回是一个数组
++        Header[] headerArray = httpResponse.getAllHeaders();
++
++        // 创建一个hashmap对象，通过postman可以看到请求响应头信息都是Key和value得形式
++        HashMap<String, String> hm = new HashMap<String, String>();
++
++        // 增强for循环遍历headerArray数组，依次把元素添加到hashmap集合
++        for(Header header : headerArray) {
++            hm.put(header.getName(), header.getValue());
++        }
++
++        // 打印hashmap
++        System.out.println("Response Headers的结果为："+ hm);
++
++        // 关闭
++        return httpResponse;
++    }
++}
+\ No newline at end of file
+Index: src/test/java/com/methodpackage/basic/testbasic.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/java/com/methodpackage/basic/testbasic.java	(date 1657344844939)
++++ src/test/java/com/methodpackage/basic/testbasic.java	(date 1657344844939)
+@@ -0,0 +1,12 @@
++package com.methodpackage.basic;
++
++import java.util.Properties;
++
++public class testbasic {
++    public Properties prop;
++    public int RESPNSE_STATUS_CODE_200 = 200;
++    public int RESPNSE_STATUS_CODE_201 = 201;
++    public int RESPNSE_STATUS_CODE_404 = 404;
++    public int RESPNSE_STATUS_CODE_500 = 500;
++
++}
+\ No newline at end of file
+Index: src/test/java/com/hxk/tesngDemo/login.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/java/com/hxk/tesngDemo/login.java	(date 1657353768701)
++++ src/test/java/com/hxk/tesngDemo/login.java	(date 1657353768701)
+@@ -0,0 +1,122 @@
++package com.hxk.tesngDemo;
++
++import com.alibaba.fastjson.JSON;
++import com.methodpackage.basic.testbasic;
++import org.apache.http.Header;
++import org.apache.http.client.config.RequestConfig;
++import org.testng.Assert;
++import org.testng.annotations.Test;
++import com.alibaba.fastjson.JSONObject;
++import org.apache.http.HttpEntity;
++import org.apache.http.client.methods.CloseableHttpResponse;
++import org.apache.http.client.methods.HttpPost;
++import org.apache.http.entity.StringEntity;
++import org.apache.http.impl.client.CloseableHttpClient;
++import org.apache.http.impl.client.HttpClients;
++import org.apache.http.util.EntityUtils;
++import java.io.BufferedWriter;
++import java.io.File;
++import java.io.FileWriter;
++import java.io.IOException;
++import java.util.HashMap;
++
++/**
++ * @author    Anker
++ * @date      2019/08/22
++ * @analysis  login用例是登录接口——>(POST请求：带Body参数，不带Params参数，不带Headers参数，application/json格式)
++ */
++
++public class login extends testbasic {
++
++    public String token;  //定义一个变量，用于存放登录后的token值
++
++    // 登录接口测试并获取token值
++    public String login() throws Exception {
++
++        // 通过HttpPost来发送post请求，带Body参数
++        HttpPost httpPost = new HttpPost("https://api-test.liupinshuyuan.com/userCenter/api/v1/login/backLogin");
++        JSONObject jsonParam = new JSONObject();
++        jsonParam.put("userAccount", "13429667373");
++        jsonParam.put("password", "he475738879123");
++        jsonParam.put("platId",4);
++        //添加headers内容
++        httpPost.addHeader("system","eduOnline");
++
++        StringEntity entity = new StringEntity(jsonParam.toString(),"utf-8");
++        entity.setContentEncoding("UTF-8");
++
++        // Headers的Content-Type类型
++        entity.setContentType("application/json");
++        httpPost.setEntity(entity);
++
++        //打印httpPost
++        System.out.println("请求是"+jsonParam);
++
++        // 通过HttpClient来执行请求，获取一个响应结果
++        CloseableHttpClient httpClient = HttpClients.createDefault();
++
++        // 添加断言，获取服务器响应的状态码
++        CloseableHttpResponse response = httpClient.execute(httpPost);
++        int statusCode = response.getStatusLine().getStatusCode();
++        Assert.assertEquals(statusCode, RESPNSE_STATUS_CODE_200, "服务器返回的状态码不是200");
++        System.out.println("服务器响应的状态码为：" + statusCode);
++
++        // 设置超时时间
++        RequestConfig requestConfig = RequestConfig.custom()
++                .setSocketTimeout(2000)
++                .setConnectionRequestTimeout(2000)
++                .build();
++        httpPost.setConfig(requestConfig);
++
++        // 获取Response Headers的值
++        Header[] headerArray = response.getAllHeaders(); //获取响应头信息,返回是一个数组
++        HashMap<String, String> hm = new HashMap<String, String>(); //创建一个hashmap对象
++        // 增强for循环遍历headerArray数组，依次把元素添加到hashmap集合
++        for(Header header : headerArray) {
++            hm.put(header.getName(), header.getValue());
++        }
++        // 打印hashmap
++//        System.out.println("Response Headers的结果为："+ hm);
++
++        // 获取Content-Type的类型
++        HttpEntity httpentity = response.getEntity();
++
++        // 获取Response Body结果
++        String str = EntityUtils.toString(httpentity, "utf-8");
++//        writeTxt(str.toString()); //调用writeTxt()函数，将Response Body的结果保存到本地文本文件中
++        System.out.println("登录接口的Response Body结果为：" + str);
++
++        // 登录成功后，获取服务器返回Body值里的token值
++        JSONObject json = JSON.parseObject(str); //将str的结果转换成json格式
++        JSONObject data = json.getJSONObject("data");
++        token = data.getJSONObject("tokenInfo").getString("refreshToken");
++        System.out.println("登录成功后的token值为：" + token);
++
++        return token;
++        // 关闭
++//        response.close();
++    }
++
++    // 将服务器的响应结果保存到本地文本文件中
++//    public static void  writeTxt(String str) throws Exception{
++//
++//        File file=new File("./Api_AutoTestCase");
++//        if(!file.exists()){ //如果文件夹不存在
++//            file.mkdir(); //创建文件夹
++//        }
++//        FileWriter fw = null;
++//        String path = "./Api_AutoTestCase/登录接口的Response Body值.txt";
++//        File f = new File(path);
++//        try {
++//            if (!f.exists()) {
++//                f.createNewFile();
++//            }
++//            fw = new FileWriter(f);
++//            BufferedWriter out = new BufferedWriter(fw);
++//            out.write(str.toString());
++//            out.close();
++//        } catch (IOException e) {
++//            e.printStackTrace();
++//        }
++//    }
++}
+\ No newline at end of file
+Index: src/test/java/com/methodpackage/util/util_json.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/java/com/methodpackage/util/util_json.java	(date 1657344928986)
++++ src/test/java/com/methodpackage/util/util_json.java	(date 1657344928986)
+@@ -0,0 +1,33 @@
++package com.methodpackage.util;
++
++import com.alibaba.fastjson.JSONArray;
++import com.alibaba.fastjson.JSONObject;
++
++public class util_json {
++
++    /**
++     *
++     * @param responseJson ,这个变量是拿到响应字符串通过json转换成json对象
++     * @param jpath,这个jpath指的是用户想要查询json对象的值的路径写法
++     * jpath写法举例：1) per_page  2)data[1]/first_name ，data是一个json数组，[1]表示索引
++     * /first_name 表示data数组下某一个元素下的json对象的名称为first_name
++     * @return，返回first_name这个json对象名称对应的值
++     */
++
++    //json解析方法
++    public static String getValueByJPath(JSONObject responseJson, String jpath){
++        Object obj = responseJson;
++        for(String s : jpath.split("/")) {
++            if(!s.isEmpty()) {
++                if(!(s.contains("[") || s.contains("]"))) {
++                    obj = ((JSONObject) obj).get(s);
++                }
++                else if(s.contains("[") || s.contains("]")) {
++                    obj =((JSONArray)((JSONObject)obj).get(s.split("\\[")[0])).get(Integer.parseInt(s.split(
++                            "\\[")[1].replaceAll("]", "")));
++                }
++            }
++        }
++        return obj.toString();
++    }
++}
+\ No newline at end of file
+Index: allure-results/4e05da55-93ba-4e2d-8543-dcc3a3f15bad-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/4e05da55-93ba-4e2d-8543-dcc3a3f15bad-container.json	(date 1657345083622)
++++ allure-results/4e05da55-93ba-4e2d-8543-dcc3a3f15bad-container.json	(date 1657345083622)
+@@ -0,0 +1,1 @@
++{"uuid":"4e05da55-93ba-4e2d-8543-dcc3a3f15bad","name":"testng1.1","children":["76b5569f-2b47-437b-b65b-a64bdef172f3"],"befores":[],"afters":[],"links":[],"start":1657345061865,"stop":1657345083615}
+\ No newline at end of file
+Index: allure-results/e86c42cd-ca23-4cc6-a199-812675bc15f5-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/e86c42cd-ca23-4cc6-a199-812675bc15f5-container.json	(date 1657345083624)
++++ allure-results/e86c42cd-ca23-4cc6-a199-812675bc15f5-container.json	(date 1657345083624)
+@@ -0,0 +1,1 @@
++{"uuid":"e86c42cd-ca23-4cc6-a199-812675bc15f5","name":"com.hxk.tesngDemo.login","children":["76b5569f-2b47-437b-b65b-a64bdef172f3"],"befores":[],"afters":[],"links":[],"start":1657345061871,"stop":1657345083623}
+\ No newline at end of file
+Index: allure-results/76b5569f-2b47-437b-b65b-a64bdef172f3-result.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/76b5569f-2b47-437b-b65b-a64bdef172f3-result.json	(date 1657345083613)
++++ allure-results/76b5569f-2b47-437b-b65b-a64bdef172f3-result.json	(date 1657345083613)
+@@ -0,0 +1,1 @@
++{"name":"Login_POST_APITest","status":"broken","statusDetails":{"known":false,"muted":false,"flaky":false,"message":"Connect to 192.168.2.99:28013 [/192.168.2.99] failed: Connection timed out: connect","trace":"org.apache.http.conn.HttpHostConnectException: Connect to 192.168.2.99:28013 [/192.168.2.99] failed: Connection timed out: connect\r\n\tat org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)\r\n\tat org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:374)\r\n\tat org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)\r\n\tat org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)\r\n\tat org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)\r\n\tat org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)\r\n\tat org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)\r\n\tat org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)\r\n\tat org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)\r\n\tat org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)\r\n\tat com.hxk.tesngDemo.login.Login_POST_APITest(login.java:53)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)\r\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:583)\r\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)\r\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:648)\r\n\tat org.testng.TestRunner.run(TestRunner.java:505)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:455)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:364)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1137)\r\n\tat org.testng.TestNG.runSuites(TestNG.java:1049)\r\n\tat org.testng.TestNG.run(TestNG.java:1017)\r\n\tat com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)\r\n\tat com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)\r\nCaused by: java.net.ConnectException: Connection timed out: connect\r\n\tat java.net.DualStackPlainSocketImpl.connect0(Native Method)\r\n\tat java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:75)\r\n\tat java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)\r\n\tat java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)\r\n\tat java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)\r\n\tat java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)\r\n\tat java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)\r\n\tat java.net.Socket.connect(Socket.java:606)\r\n\tat org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)\r\n\tat org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)\r\n\t... 34 more\r\n"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1657345061954,"stop":1657345083551,"uuid":"76b5569f-2b47-437b-b65b-a64bdef172f3","historyId":"ef32efe1278ac58ab068ccae5e47d997","fullName":"com.hxk.tesngDemo.login.Login_POST_APITest","labels":[{"name":"package","value":"com.hxk.tesngDemo.login"},{"name":"testClass","value":"com.hxk.tesngDemo.login"},{"name":"testMethod","value":"Login_POST_APITest"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"testng1.1"},{"name":"subSuite","value":"com.hxk.tesngDemo.login"},{"name":"host","value":"浪里个浪"},{"name":"thread","value":"3408@浪里个浪.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[]}
+\ No newline at end of file
+Index: allure-results/f695b294-dc02-495c-b758-6996cc8bc740-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/f695b294-dc02-495c-b758-6996cc8bc740-container.json	(date 1657345083625)
++++ allure-results/f695b294-dc02-495c-b758-6996cc8bc740-container.json	(date 1657345083625)
+@@ -0,0 +1,1 @@
++{"uuid":"f695b294-dc02-495c-b758-6996cc8bc740","name":"Default Suite","children":["4e05da55-93ba-4e2d-8543-dcc3a3f15bad"],"befores":[],"afters":[],"links":[],"start":1657345061862,"stop":1657345083624}
+\ No newline at end of file
+Index: allure-results/22a42396-e859-446c-abe8-f5a60a3188c1-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/22a42396-e859-446c-abe8-f5a60a3188c1-container.json	(date 1657345320870)
++++ allure-results/22a42396-e859-446c-abe8-f5a60a3188c1-container.json	(date 1657345320870)
+@@ -0,0 +1,1 @@
++{"uuid":"22a42396-e859-446c-abe8-f5a60a3188c1","name":"com.hxk.tesngDemo.login","children":["3119da1c-5d4f-466c-b80e-7a1a51e1107d"],"befores":[],"afters":[],"links":[],"start":1657345319959,"stop":1657345320869}
+\ No newline at end of file
+Index: Api_AutoTestCase/登录接口的Response Body值.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Api_AutoTestCase/登录接口的Response Body值.txt	(date 1657351816545)
++++ Api_AutoTestCase/登录接口的Response Body值.txt	(date 1657351816545)
+@@ -0,0 +1,1 @@
++{"status":0,"msg":"success","data":{"uid":4151351,"wxAuthUrl":null,"tokenInfo":{"token":"Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0MTUxMzUxIiwiaWF0IjoxNjU3MzUxODE1LCJleHAiOjE2NTg2NDc4MTUsInBheWxvYWQiOiJ7XCJpZFwiOjEwMDAwMDMzLFwicGxhdElkc1wiOlwiWzRdXCIsXCJzZXhcIjoxLFwidWlkXCI6NDE1MTM1MSxcInVzZXJJZFwiOjQxNTEzNTEsXCJ1c2VyTmFtZVwiOlwi5L2V5bCP5bq3XCIsXCJ1c2VyUGljXCI6XCJcIn0ifQ.10YBu7LFBUtAfk03uVa9yBWJhKr_O5bxJvUViXfbwV4","tokenExpireTime":1658647815,"refreshToken":"Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0MTUxMzUxIiwiaWF0IjoxNjU3MzUxODE1LCJleHAiOjE2NTk5NDM4MTUsInBheWxvYWQiOiJ7XCJpZFwiOjEwMDAwMDMzLFwicGxhdElkc1wiOlwiWzRdXCIsXCJzZXhcIjoxLFwidWlkXCI6NDE1MTM1MSxcInVzZXJJZFwiOjQxNTEzNTEsXCJ1c2VyTmFtZVwiOlwi5L2V5bCP5bq3XCIsXCJ1c2VyUGljXCI6XCJcIn0ifQ.2qllmw1Lz0B_f_UkcZQ_1Plv7ZWbrh0k3qZZ7-prm_A"},"userInfo":null,"backUserInfo":{"backUserId":10000033,"platId":"[4]","uid":4151351,"userAccount":"13429667373","userName":"何小康","phone":"13429667373","userPic":"","role":1,"roleCode":"admin","email":"","sex":1,"status":0,"createDate":null,"updateDate":null,"remark":null,"roles":[{"roleId":1,"platId":4,"roleCode":"admin"}]},"sysBackUser":null,"type":null,"wxUserId":null,"phoneUserId":null},"totalNum":null,"pageIndex":null,"pageSize":null,"totalPage":null,"success":true,"error":false}
+\ No newline at end of file
+Index: allure-results/3ccc5c97-7283-4492-a54a-284aeef523bc-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/3ccc5c97-7283-4492-a54a-284aeef523bc-container.json	(date 1657345320871)
++++ allure-results/3ccc5c97-7283-4492-a54a-284aeef523bc-container.json	(date 1657345320871)
+@@ -0,0 +1,1 @@
++{"uuid":"3ccc5c97-7283-4492-a54a-284aeef523bc","name":"Default Suite","children":["d47bcbf6-f63a-4724-84d9-b136a04ba259"],"befores":[],"afters":[],"links":[],"start":1657345319953,"stop":1657345320871}
+\ No newline at end of file
+Index: allure-results/d47bcbf6-f63a-4724-84d9-b136a04ba259-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/d47bcbf6-f63a-4724-84d9-b136a04ba259-container.json	(date 1657345320868)
++++ allure-results/d47bcbf6-f63a-4724-84d9-b136a04ba259-container.json	(date 1657345320868)
+@@ -0,0 +1,1 @@
++{"uuid":"d47bcbf6-f63a-4724-84d9-b136a04ba259","name":"testng1.1","children":["3119da1c-5d4f-466c-b80e-7a1a51e1107d"],"befores":[],"afters":[],"links":[],"start":1657345319955,"stop":1657345320864}
+\ No newline at end of file
+Index: allure-results/a05dadb7-bbb2-40d6-982c-22a3bfd644eb-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/a05dadb7-bbb2-40d6-982c-22a3bfd644eb-container.json	(date 1657345357983)
++++ allure-results/a05dadb7-bbb2-40d6-982c-22a3bfd644eb-container.json	(date 1657345357983)
+@@ -0,0 +1,1 @@
++{"uuid":"a05dadb7-bbb2-40d6-982c-22a3bfd644eb","name":"com.hxk.tesngDemo.login","children":["0d120998-5ae9-41ad-b4ff-1b044e3f200e"],"befores":[],"afters":[],"links":[],"start":1657345356873,"stop":1657345357983}
+\ No newline at end of file
+Index: allure-results/3119da1c-5d4f-466c-b80e-7a1a51e1107d-result.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/3119da1c-5d4f-466c-b80e-7a1a51e1107d-result.json	(date 1657345320863)
++++ allure-results/3119da1c-5d4f-466c-b80e-7a1a51e1107d-result.json	(date 1657345320863)
+@@ -0,0 +1,1 @@
++{"name":"Login_POST_APITest","status":"broken","statusDetails":{"known":false,"muted":false,"flaky":false,"message":"java.lang.NullPointerException","trace":"java.lang.NullPointerException\r\n\tat com.hxk.tesngDemo.login.Login_POST_APITest(login.java:88)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)\r\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:583)\r\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)\r\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:648)\r\n\tat org.testng.TestRunner.run(TestRunner.java:505)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:455)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:364)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1137)\r\n\tat org.testng.TestNG.runSuites(TestNG.java:1049)\r\n\tat org.testng.TestNG.run(TestNG.java:1017)\r\n\tat com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)\r\n\tat com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)\r\n"},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1657345320040,"stop":1657345320789,"uuid":"3119da1c-5d4f-466c-b80e-7a1a51e1107d","historyId":"ef32efe1278ac58ab068ccae5e47d997","fullName":"com.hxk.tesngDemo.login.Login_POST_APITest","labels":[{"name":"package","value":"com.hxk.tesngDemo.login"},{"name":"testClass","value":"com.hxk.tesngDemo.login"},{"name":"testMethod","value":"Login_POST_APITest"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"testng1.1"},{"name":"subSuite","value":"com.hxk.tesngDemo.login"},{"name":"host","value":"浪里个浪"},{"name":"thread","value":"12828@浪里个浪.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[]}
+\ No newline at end of file
+Index: allure-results/ae81002b-4dff-49c8-b29e-27f39c37d86e-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/ae81002b-4dff-49c8-b29e-27f39c37d86e-container.json	(date 1657345357982)
++++ allure-results/ae81002b-4dff-49c8-b29e-27f39c37d86e-container.json	(date 1657345357982)
+@@ -0,0 +1,1 @@
++{"uuid":"ae81002b-4dff-49c8-b29e-27f39c37d86e","name":"testng1.1","children":["0d120998-5ae9-41ad-b4ff-1b044e3f200e"],"befores":[],"afters":[],"links":[],"start":1657345356870,"stop":1657345357978}
+\ No newline at end of file
+Index: allure-results/0d120998-5ae9-41ad-b4ff-1b044e3f200e-result.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/0d120998-5ae9-41ad-b4ff-1b044e3f200e-result.json	(date 1657345357977)
++++ allure-results/0d120998-5ae9-41ad-b4ff-1b044e3f200e-result.json	(date 1657345357977)
+@@ -0,0 +1,1 @@
++{"name":"Login_POST_APITest","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1657345356950,"stop":1657345357900,"uuid":"0d120998-5ae9-41ad-b4ff-1b044e3f200e","historyId":"ef32efe1278ac58ab068ccae5e47d997","fullName":"com.hxk.tesngDemo.login.Login_POST_APITest","labels":[{"name":"package","value":"com.hxk.tesngDemo.login"},{"name":"testClass","value":"com.hxk.tesngDemo.login"},{"name":"testMethod","value":"Login_POST_APITest"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"testng1.1"},{"name":"subSuite","value":"com.hxk.tesngDemo.login"},{"name":"host","value":"浪里个浪"},{"name":"thread","value":"2136@浪里个浪.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[]}
+\ No newline at end of file
+Index: allure-results/72f1e377-64e4-4512-9864-f1095339ee9a-result.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/72f1e377-64e4-4512-9864-f1095339ee9a-result.json	(date 1657346248604)
++++ allure-results/72f1e377-64e4-4512-9864-f1095339ee9a-result.json	(date 1657346248604)
+@@ -0,0 +1,1 @@
++{"name":"Login_POST_APITest","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1657346247651,"stop":1657346248532,"uuid":"72f1e377-64e4-4512-9864-f1095339ee9a","historyId":"ef32efe1278ac58ab068ccae5e47d997","fullName":"com.hxk.tesngDemo.login.Login_POST_APITest","labels":[{"name":"package","value":"com.hxk.tesngDemo.login"},{"name":"testClass","value":"com.hxk.tesngDemo.login"},{"name":"testMethod","value":"Login_POST_APITest"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"testng1.1"},{"name":"subSuite","value":"com.hxk.tesngDemo.login"},{"name":"host","value":"浪里个浪"},{"name":"thread","value":"18780@浪里个浪.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[]}
+\ No newline at end of file
+Index: allure-results/d0dfb431-f2b9-44d9-9a76-05bf535c569b-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/d0dfb431-f2b9-44d9-9a76-05bf535c569b-container.json	(date 1657345357984)
++++ allure-results/d0dfb431-f2b9-44d9-9a76-05bf535c569b-container.json	(date 1657345357984)
+@@ -0,0 +1,1 @@
++{"uuid":"d0dfb431-f2b9-44d9-9a76-05bf535c569b","name":"Default Suite","children":["ae81002b-4dff-49c8-b29e-27f39c37d86e"],"befores":[],"afters":[],"links":[],"start":1657345356868,"stop":1657345357984}
+\ No newline at end of file
+Index: allure-results/34880039-7483-40f2-bb4a-d6ac59def313-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/34880039-7483-40f2-bb4a-d6ac59def313-container.json	(date 1657346248610)
++++ allure-results/34880039-7483-40f2-bb4a-d6ac59def313-container.json	(date 1657346248610)
+@@ -0,0 +1,1 @@
++{"uuid":"34880039-7483-40f2-bb4a-d6ac59def313","name":"testng1.1","children":["72f1e377-64e4-4512-9864-f1095339ee9a"],"befores":[],"afters":[],"links":[],"start":1657346247578,"stop":1657346248606}
+\ No newline at end of file
+Index: allure-results/d79c5bf5-f9b5-4c5a-9a48-6410285c16db-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/d79c5bf5-f9b5-4c5a-9a48-6410285c16db-container.json	(date 1657346248613)
++++ allure-results/d79c5bf5-f9b5-4c5a-9a48-6410285c16db-container.json	(date 1657346248613)
+@@ -0,0 +1,1 @@
++{"uuid":"d79c5bf5-f9b5-4c5a-9a48-6410285c16db","name":"Default Suite","children":["34880039-7483-40f2-bb4a-d6ac59def313"],"befores":[],"afters":[],"links":[],"start":1657346247575,"stop":1657346248612}
+\ No newline at end of file
+Index: src/test/java/com/hxk/tesngDemo/index.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/test/java/com/hxk/tesngDemo/index.java	(date 1658814390311)
++++ src/test/java/com/hxk/tesngDemo/index.java	(date 1658814390311)
+@@ -0,0 +1,65 @@
++package com.hxk.tesngDemo;
++
++import com.methodpackage.basic.testbasic;
++import org.apache.http.Header;
++import org.apache.http.HttpEntity;
++import org.apache.http.client.config.RequestConfig;
++import org.apache.http.client.methods.CloseableHttpResponse;
++import org.apache.http.client.methods.HttpGet;
++import org.apache.http.entity.StringEntity;
++import org.apache.http.impl.client.CloseableHttpClient;
++import org.apache.http.impl.client.HttpClients;
++import org.apache.http.util.EntityUtils;
++import org.testng.Assert;
++import org.testng.annotations.Test;
++
++import java.io.IOException;
++import java.util.HashMap;
++
++public class index extends testbasic {
++
++    @Test
++    public void index() throws Exception{
++        login login = new login();
++        String token = login.login();
++        HttpGet httpGet=new HttpGet("https://api-test.liupinshuyuan.com/curricula/course/admin_video/index?id=&video_title=&page=1&per_page=20");
++        httpGet.addHeader("Authorization",token);
++//        StringEntity entity = new StringEntity(jsonParam.toString(),"utf-8");
++//        entity.setContentEncoding("UTF-8");
++//
++//        // Headers的Content-Type类型
++//        entity.setContentType("application/json");
++//        httpGet.setEntity(entity);
++
++
++        // 通过HttpClient来执行请求，获取一个响应结果
++        CloseableHttpClient httpClient = HttpClients.createDefault();
++
++        // 添加断言，获取服务器响应的状态码
++        CloseableHttpResponse response = httpClient.execute(httpGet);
++        int statusCode = response.getStatusLine().getStatusCode();
++        Assert.assertEquals(statusCode, RESPNSE_STATUS_CODE_200, "服务器返回的状态码不是200");
++        System.out.println("服务器响应的状态码为：" + statusCode);
++
++        // 设置超时时间
++        RequestConfig requestConfig = RequestConfig.custom()
++                .setSocketTimeout(2000)
++                .setConnectionRequestTimeout(2000)
++                .build();
++        httpGet.setConfig(requestConfig);
++
++        // 获取Response Headers的值
++        Header[] headerArray = response.getAllHeaders(); //获取响应头信息,返回是一个数组
++        HashMap<String, String> hm = new HashMap<String, String>(); //创建一个hashmap对象
++        // 增强for循环遍历headerArray数组，依次把元素添加到hashmap集合
++        for(Header header : headerArray) {
++            hm.put(header.getName(), header.getValue());
++        }
++
++        // 获取Content-Type的类型
++        HttpEntity httpentity = response.getEntity();
++        // 获取Response Body结果
++        String str = EntityUtils.toString(httpentity, "utf-8");
++        System.out.println("index接口的Response Body结果为：" + str);
++    }
++}
+Index: allure-results/d3478d8a-18ec-4c4b-950f-4a565090f7a1-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/d3478d8a-18ec-4c4b-950f-4a565090f7a1-container.json	(date 1657346248612)
++++ allure-results/d3478d8a-18ec-4c4b-950f-4a565090f7a1-container.json	(date 1657346248612)
+@@ -0,0 +1,1 @@
++{"uuid":"d3478d8a-18ec-4c4b-950f-4a565090f7a1","name":"com.hxk.tesngDemo.login","children":["72f1e377-64e4-4512-9864-f1095339ee9a"],"befores":[],"afters":[],"links":[],"start":1657346247583,"stop":1657346248611}
+\ No newline at end of file
+Index: allure-results/f813a3c2-e219-41d1-867f-d4a5f7053cc5-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/f813a3c2-e219-41d1-867f-d4a5f7053cc5-container.json	(date 1657349910012)
++++ allure-results/f813a3c2-e219-41d1-867f-d4a5f7053cc5-container.json	(date 1657349910012)
+@@ -0,0 +1,1 @@
++{"uuid":"f813a3c2-e219-41d1-867f-d4a5f7053cc5","name":"com.hxk.tesngDemo.index","children":["b971317a-0c7b-4e3e-8505-1615f7ec9467","01ec544b-e8fe-42e1-b243-242dd1180aeb"],"befores":[],"afters":[],"links":[],"start":1657349908459,"stop":1657349910012}
+\ No newline at end of file
+Index: allure-results/01ec544b-e8fe-42e1-b243-242dd1180aeb-result.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/01ec544b-e8fe-42e1-b243-242dd1180aeb-result.json	(date 1657349910005)
++++ allure-results/01ec544b-e8fe-42e1-b243-242dd1180aeb-result.json	(date 1657349910005)
+@@ -0,0 +1,1 @@
++{"name":"login","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1657349909755,"stop":1657349910003,"uuid":"01ec544b-e8fe-42e1-b243-242dd1180aeb","historyId":"5a3afbca24582846b333501105adbaa1","fullName":"com.hxk.tesngDemo.login.login","labels":[{"name":"package","value":"com.hxk.tesngDemo.index"},{"name":"testClass","value":"com.hxk.tesngDemo.index"},{"name":"testMethod","value":"login"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"testng1.1"},{"name":"subSuite","value":"com.hxk.tesngDemo.index"},{"name":"host","value":"浪里个浪"},{"name":"thread","value":"22888@浪里个浪.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[]}
+\ No newline at end of file
+Index: allure-results/b971317a-0c7b-4e3e-8505-1615f7ec9467-result.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/b971317a-0c7b-4e3e-8505-1615f7ec9467-result.json	(date 1657349909753)
++++ allure-results/b971317a-0c7b-4e3e-8505-1615f7ec9467-result.json	(date 1657349909753)
+@@ -0,0 +1,1 @@
++{"name":"index","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1657349908528,"stop":1657349909681,"uuid":"b971317a-0c7b-4e3e-8505-1615f7ec9467","historyId":"4635e239e02272ad70738f4269a29b74","fullName":"com.hxk.tesngDemo.index.index","labels":[{"name":"package","value":"com.hxk.tesngDemo.index"},{"name":"testClass","value":"com.hxk.tesngDemo.index"},{"name":"testMethod","value":"index"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"testng1.1"},{"name":"subSuite","value":"com.hxk.tesngDemo.index"},{"name":"host","value":"浪里个浪"},{"name":"thread","value":"22888@浪里个浪.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[]}
+\ No newline at end of file
+Index: allure-results/9786b8d2-0d3e-4183-bec6-77101315d6cd-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/9786b8d2-0d3e-4183-bec6-77101315d6cd-container.json	(date 1657349910011)
++++ allure-results/9786b8d2-0d3e-4183-bec6-77101315d6cd-container.json	(date 1657349910011)
+@@ -0,0 +1,1 @@
++{"uuid":"9786b8d2-0d3e-4183-bec6-77101315d6cd","name":"testng1.1","children":["b971317a-0c7b-4e3e-8505-1615f7ec9467","01ec544b-e8fe-42e1-b243-242dd1180aeb"],"befores":[],"afters":[],"links":[],"start":1657349908453,"stop":1657349910006}
+\ No newline at end of file
+Index: allure-results/eb7e75dd-7218-4a4c-a739-70ca117abcbc-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/eb7e75dd-7218-4a4c-a739-70ca117abcbc-container.json	(date 1657349966810)
++++ allure-results/eb7e75dd-7218-4a4c-a739-70ca117abcbc-container.json	(date 1657349966810)
+@@ -0,0 +1,1 @@
++{"uuid":"eb7e75dd-7218-4a4c-a739-70ca117abcbc","name":"com.hxk.tesngDemo.index","children":["3e5c6a9f-96ce-4865-9748-47ab5f1987a1","0df43641-d3bf-4336-b193-fbc52179bbc4"],"befores":[],"afters":[],"links":[],"start":1657349965289,"stop":1657349966809}
+\ No newline at end of file
+Index: allure-results/462ae7ef-d6cc-4a0f-a1a3-b088991bb8ae-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/462ae7ef-d6cc-4a0f-a1a3-b088991bb8ae-container.json	(date 1657349910014)
++++ allure-results/462ae7ef-d6cc-4a0f-a1a3-b088991bb8ae-container.json	(date 1657349910014)
+@@ -0,0 +1,1 @@
++{"uuid":"462ae7ef-d6cc-4a0f-a1a3-b088991bb8ae","name":"Default Suite","children":["9786b8d2-0d3e-4183-bec6-77101315d6cd"],"befores":[],"afters":[],"links":[],"start":1657349908451,"stop":1657349910013}
+\ No newline at end of file
+Index: allure-results/a6d4e5d5-45ee-4dfb-a7e6-b4f31b1c625e-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/a6d4e5d5-45ee-4dfb-a7e6-b4f31b1c625e-container.json	(date 1657349966808)
++++ allure-results/a6d4e5d5-45ee-4dfb-a7e6-b4f31b1c625e-container.json	(date 1657349966808)
+@@ -0,0 +1,1 @@
++{"uuid":"a6d4e5d5-45ee-4dfb-a7e6-b4f31b1c625e","name":"testng1.1","children":["3e5c6a9f-96ce-4865-9748-47ab5f1987a1","0df43641-d3bf-4336-b193-fbc52179bbc4"],"befores":[],"afters":[],"links":[],"start":1657349965286,"stop":1657349966805}
+\ No newline at end of file
+Index: allure-results/e40c2fc9-3f19-489c-a2de-3b9bafe64461-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/e40c2fc9-3f19-489c-a2de-3b9bafe64461-container.json	(date 1657349966814)
++++ allure-results/e40c2fc9-3f19-489c-a2de-3b9bafe64461-container.json	(date 1657349966814)
+@@ -0,0 +1,1 @@
++{"uuid":"e40c2fc9-3f19-489c-a2de-3b9bafe64461","name":"Default Suite","children":["a6d4e5d5-45ee-4dfb-a7e6-b4f31b1c625e"],"befores":[],"afters":[],"links":[],"start":1657349965284,"stop":1657349966811}
+\ No newline at end of file
+Index: allure-results/0df43641-d3bf-4336-b193-fbc52179bbc4-result.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/0df43641-d3bf-4336-b193-fbc52179bbc4-result.json	(date 1657349966803)
++++ allure-results/0df43641-d3bf-4336-b193-fbc52179bbc4-result.json	(date 1657349966803)
+@@ -0,0 +1,1 @@
++{"name":"login","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1657349966501,"stop":1657349966801,"uuid":"0df43641-d3bf-4336-b193-fbc52179bbc4","historyId":"5a3afbca24582846b333501105adbaa1","fullName":"com.hxk.tesngDemo.login.login","labels":[{"name":"package","value":"com.hxk.tesngDemo.index"},{"name":"testClass","value":"com.hxk.tesngDemo.index"},{"name":"testMethod","value":"login"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"testng1.1"},{"name":"subSuite","value":"com.hxk.tesngDemo.index"},{"name":"host","value":"浪里个浪"},{"name":"thread","value":"24528@浪里个浪.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[]}
+\ No newline at end of file
+Index: allure-results/3e5c6a9f-96ce-4865-9748-47ab5f1987a1-result.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/3e5c6a9f-96ce-4865-9748-47ab5f1987a1-result.json	(date 1657349966499)
++++ allure-results/3e5c6a9f-96ce-4865-9748-47ab5f1987a1-result.json	(date 1657349966499)
+@@ -0,0 +1,1 @@
++{"name":"index","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1657349965354,"stop":1657349966451,"uuid":"3e5c6a9f-96ce-4865-9748-47ab5f1987a1","historyId":"4635e239e02272ad70738f4269a29b74","fullName":"com.hxk.tesngDemo.index.index","labels":[{"name":"package","value":"com.hxk.tesngDemo.index"},{"name":"testClass","value":"com.hxk.tesngDemo.index"},{"name":"testMethod","value":"index"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"testng1.1"},{"name":"subSuite","value":"com.hxk.tesngDemo.index"},{"name":"host","value":"浪里个浪"},{"name":"thread","value":"24528@浪里个浪.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[]}
+\ No newline at end of file
+Index: allure-results/30e88f3e-9c57-476a-b0e5-5e751cd168bf-result.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/30e88f3e-9c57-476a-b0e5-5e751cd168bf-result.json	(date 1657350044755)
++++ allure-results/30e88f3e-9c57-476a-b0e5-5e751cd168bf-result.json	(date 1657350044755)
+@@ -0,0 +1,1 @@
++{"name":"index","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1657350043839,"stop":1657350044709,"uuid":"30e88f3e-9c57-476a-b0e5-5e751cd168bf","historyId":"4635e239e02272ad70738f4269a29b74","fullName":"com.hxk.tesngDemo.index.index","labels":[{"name":"package","value":"com.hxk.tesngDemo.index"},{"name":"testClass","value":"com.hxk.tesngDemo.index"},{"name":"testMethod","value":"index"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"testng1.1"},{"name":"subSuite","value":"com.hxk.tesngDemo.index"},{"name":"host","value":"浪里个浪"},{"name":"thread","value":"25544@浪里个浪.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[]}
+\ No newline at end of file
+Index: allure-results/4413ff8d-7e3e-4594-b8fe-b40ca986e12e-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/4413ff8d-7e3e-4594-b8fe-b40ca986e12e-container.json	(date 1657350045149)
++++ allure-results/4413ff8d-7e3e-4594-b8fe-b40ca986e12e-container.json	(date 1657350045149)
+@@ -0,0 +1,1 @@
++{"uuid":"4413ff8d-7e3e-4594-b8fe-b40ca986e12e","name":"testng1.1","children":["30e88f3e-9c57-476a-b0e5-5e751cd168bf","2186bff6-b39c-427c-b855-aedd187584b1"],"befores":[],"afters":[],"links":[],"start":1657350043759,"stop":1657350045144}
+\ No newline at end of file
+Index: allure-results/fcb65349-de5b-4b8a-9867-d2e0836792bb-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/fcb65349-de5b-4b8a-9867-d2e0836792bb-container.json	(date 1657350045152)
++++ allure-results/fcb65349-de5b-4b8a-9867-d2e0836792bb-container.json	(date 1657350045152)
+@@ -0,0 +1,1 @@
++{"uuid":"fcb65349-de5b-4b8a-9867-d2e0836792bb","name":"com.hxk.tesngDemo.index","children":["30e88f3e-9c57-476a-b0e5-5e751cd168bf","2186bff6-b39c-427c-b855-aedd187584b1"],"befores":[],"afters":[],"links":[],"start":1657350043764,"stop":1657350045151}
+\ No newline at end of file
+Index: allure-results/2411bbfd-1104-4d77-add0-c0d531ad7c29-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/2411bbfd-1104-4d77-add0-c0d531ad7c29-container.json	(date 1657350045153)
++++ allure-results/2411bbfd-1104-4d77-add0-c0d531ad7c29-container.json	(date 1657350045153)
+@@ -0,0 +1,1 @@
++{"uuid":"2411bbfd-1104-4d77-add0-c0d531ad7c29","name":"Default Suite","children":["4413ff8d-7e3e-4594-b8fe-b40ca986e12e"],"befores":[],"afters":[],"links":[],"start":1657350043757,"stop":1657350045152}
+\ No newline at end of file
+Index: allure-results/e0f6ba54-bdb0-47b7-a2ba-d1a0850f3a1c-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/e0f6ba54-bdb0-47b7-a2ba-d1a0850f3a1c-container.json	(date 1657351144674)
++++ allure-results/e0f6ba54-bdb0-47b7-a2ba-d1a0850f3a1c-container.json	(date 1657351144674)
+@@ -0,0 +1,1 @@
++{"uuid":"e0f6ba54-bdb0-47b7-a2ba-d1a0850f3a1c","name":"com.hxk.tesngDemo.index","children":["d607428c-5728-4ab4-89da-f8bbce51a670"],"befores":[],"afters":[],"links":[],"start":1657351143481,"stop":1657351144674}
+\ No newline at end of file
+Index: allure-results/2186bff6-b39c-427c-b855-aedd187584b1-result.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/2186bff6-b39c-427c-b855-aedd187584b1-result.json	(date 1657350045143)
++++ allure-results/2186bff6-b39c-427c-b855-aedd187584b1-result.json	(date 1657350045143)
+@@ -0,0 +1,1 @@
++{"name":"login","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1657350044757,"stop":1657350045139,"uuid":"2186bff6-b39c-427c-b855-aedd187584b1","historyId":"5a3afbca24582846b333501105adbaa1","fullName":"com.hxk.tesngDemo.login.login","labels":[{"name":"package","value":"com.hxk.tesngDemo.index"},{"name":"testClass","value":"com.hxk.tesngDemo.index"},{"name":"testMethod","value":"login"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"testng1.1"},{"name":"subSuite","value":"com.hxk.tesngDemo.index"},{"name":"host","value":"浪里个浪"},{"name":"thread","value":"25544@浪里个浪.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[]}
+\ No newline at end of file
+Index: allure-results/d607428c-5728-4ab4-89da-f8bbce51a670-result.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/d607428c-5728-4ab4-89da-f8bbce51a670-result.json	(date 1657351144668)
++++ allure-results/d607428c-5728-4ab4-89da-f8bbce51a670-result.json	(date 1657351144668)
+@@ -0,0 +1,1 @@
++{"name":"index","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1657351143558,"stop":1657351144590,"uuid":"d607428c-5728-4ab4-89da-f8bbce51a670","historyId":"4635e239e02272ad70738f4269a29b74","fullName":"com.hxk.tesngDemo.index.index","labels":[{"name":"package","value":"com.hxk.tesngDemo.index"},{"name":"testClass","value":"com.hxk.tesngDemo.index"},{"name":"testMethod","value":"index"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"testng1.1"},{"name":"subSuite","value":"com.hxk.tesngDemo.index"},{"name":"host","value":"浪里个浪"},{"name":"thread","value":"24508@浪里个浪.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[]}
+\ No newline at end of file
+Index: allure-results/a822a162-aa47-4c9a-9cdb-c153d384f465-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/a822a162-aa47-4c9a-9cdb-c153d384f465-container.json	(date 1657351144677)
++++ allure-results/a822a162-aa47-4c9a-9cdb-c153d384f465-container.json	(date 1657351144677)
+@@ -0,0 +1,1 @@
++{"uuid":"a822a162-aa47-4c9a-9cdb-c153d384f465","name":"Default Suite","children":["da2c5b0f-0241-4601-b120-a75e49533706"],"befores":[],"afters":[],"links":[],"start":1657351143472,"stop":1657351144675}
+\ No newline at end of file
+Index: allure-results/f32e71e3-e5f3-41bf-bc57-1692e2eac8d7-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/f32e71e3-e5f3-41bf-bc57-1692e2eac8d7-container.json	(date 1657351182785)
++++ allure-results/f32e71e3-e5f3-41bf-bc57-1692e2eac8d7-container.json	(date 1657351182785)
+@@ -0,0 +1,1 @@
++{"uuid":"f32e71e3-e5f3-41bf-bc57-1692e2eac8d7","name":"testng1.1","children":["f2bb4080-5a33-4e3b-ba9f-ce4fa5afecc6"],"befores":[],"afters":[],"links":[],"start":1657351181566,"stop":1657351182780}
+\ No newline at end of file
+Index: allure-results/da2c5b0f-0241-4601-b120-a75e49533706-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/da2c5b0f-0241-4601-b120-a75e49533706-container.json	(date 1657351144673)
++++ allure-results/da2c5b0f-0241-4601-b120-a75e49533706-container.json	(date 1657351144673)
+@@ -0,0 +1,1 @@
++{"uuid":"da2c5b0f-0241-4601-b120-a75e49533706","name":"testng1.1","children":["d607428c-5728-4ab4-89da-f8bbce51a670"],"befores":[],"afters":[],"links":[],"start":1657351143475,"stop":1657351144669}
+\ No newline at end of file
+Index: allure-results/f2bb4080-5a33-4e3b-ba9f-ce4fa5afecc6-result.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/f2bb4080-5a33-4e3b-ba9f-ce4fa5afecc6-result.json	(date 1657351182778)
++++ allure-results/f2bb4080-5a33-4e3b-ba9f-ce4fa5afecc6-result.json	(date 1657351182778)
+@@ -0,0 +1,1 @@
++{"name":"index","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1657351181638,"stop":1657351182685,"uuid":"f2bb4080-5a33-4e3b-ba9f-ce4fa5afecc6","historyId":"4635e239e02272ad70738f4269a29b74","fullName":"com.hxk.tesngDemo.index.index","labels":[{"name":"package","value":"com.hxk.tesngDemo.index"},{"name":"testClass","value":"com.hxk.tesngDemo.index"},{"name":"testMethod","value":"index"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"testng1.1"},{"name":"subSuite","value":"com.hxk.tesngDemo.index"},{"name":"host","value":"浪里个浪"},{"name":"thread","value":"2840@浪里个浪.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[]}
+\ No newline at end of file
+Index: allure-results/d0f36ea1-b95a-4699-81ad-0846388bf129-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/d0f36ea1-b95a-4699-81ad-0846388bf129-container.json	(date 1657351182787)
++++ allure-results/d0f36ea1-b95a-4699-81ad-0846388bf129-container.json	(date 1657351182787)
+@@ -0,0 +1,1 @@
++{"uuid":"d0f36ea1-b95a-4699-81ad-0846388bf129","name":"com.hxk.tesngDemo.index","children":["f2bb4080-5a33-4e3b-ba9f-ce4fa5afecc6"],"befores":[],"afters":[],"links":[],"start":1657351181569,"stop":1657351182786}
+\ No newline at end of file
+Index: allure-results/c31197db-069a-405d-ab2a-9b8d31898fdf-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/c31197db-069a-405d-ab2a-9b8d31898fdf-container.json	(date 1657351290433)
++++ allure-results/c31197db-069a-405d-ab2a-9b8d31898fdf-container.json	(date 1657351290433)
+@@ -0,0 +1,1 @@
++{"uuid":"c31197db-069a-405d-ab2a-9b8d31898fdf","name":"Default Suite","children":["60373099-208f-48d4-ac87-2e34d2a570bc"],"befores":[],"afters":[],"links":[],"start":1657351220150,"stop":1657351290432}
+\ No newline at end of file
+Index: allure-results/f48577df-9575-49d8-83de-8a976a470aa1-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/f48577df-9575-49d8-83de-8a976a470aa1-container.json	(date 1657351182792)
++++ allure-results/f48577df-9575-49d8-83de-8a976a470aa1-container.json	(date 1657351182792)
+@@ -0,0 +1,1 @@
++{"uuid":"f48577df-9575-49d8-83de-8a976a470aa1","name":"Default Suite","children":["f32e71e3-e5f3-41bf-bc57-1692e2eac8d7"],"befores":[],"afters":[],"links":[],"start":1657351181564,"stop":1657351182788}
+\ No newline at end of file
+Index: allure-results/60373099-208f-48d4-ac87-2e34d2a570bc-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/60373099-208f-48d4-ac87-2e34d2a570bc-container.json	(date 1657351290430)
++++ allure-results/60373099-208f-48d4-ac87-2e34d2a570bc-container.json	(date 1657351290430)
+@@ -0,0 +1,1 @@
++{"uuid":"60373099-208f-48d4-ac87-2e34d2a570bc","name":"testng1.1","children":["2901ca90-cd02-44c1-a315-72484d111ea9"],"befores":[],"afters":[],"links":[],"start":1657351220152,"stop":1657351290424}
+\ No newline at end of file
+Index: allure-results/028e49af-3d76-48dd-b310-dccc3b2a009e-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/028e49af-3d76-48dd-b310-dccc3b2a009e-container.json	(date 1657351290432)
++++ allure-results/028e49af-3d76-48dd-b310-dccc3b2a009e-container.json	(date 1657351290432)
+@@ -0,0 +1,1 @@
++{"uuid":"028e49af-3d76-48dd-b310-dccc3b2a009e","name":"com.hxk.tesngDemo.index","children":["2901ca90-cd02-44c1-a315-72484d111ea9"],"befores":[],"afters":[],"links":[],"start":1657351220157,"stop":1657351290431}
+\ No newline at end of file
+Index: allure-results/82ed3001-ce56-41e0-a9cb-6037ce8df907-result.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/82ed3001-ce56-41e0-a9cb-6037ce8df907-result.json	(date 1657351510549)
++++ allure-results/82ed3001-ce56-41e0-a9cb-6037ce8df907-result.json	(date 1657351510549)
+@@ -0,0 +1,1 @@
++{"name":"index","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1657351476134,"stop":1657351510488,"uuid":"82ed3001-ce56-41e0-a9cb-6037ce8df907","historyId":"4635e239e02272ad70738f4269a29b74","fullName":"com.hxk.tesngDemo.index.index","labels":[{"name":"package","value":"com.hxk.tesngDemo.index"},{"name":"testClass","value":"com.hxk.tesngDemo.index"},{"name":"testMethod","value":"index"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"testng1.1"},{"name":"subSuite","value":"com.hxk.tesngDemo.index"},{"name":"host","value":"浪里个浪"},{"name":"thread","value":"6704@浪里个浪.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[]}
+\ No newline at end of file
+Index: allure-results/2901ca90-cd02-44c1-a315-72484d111ea9-result.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/2901ca90-cd02-44c1-a315-72484d111ea9-result.json	(date 1657351290422)
++++ allure-results/2901ca90-cd02-44c1-a315-72484d111ea9-result.json	(date 1657351290422)
+@@ -0,0 +1,1 @@
++{"name":"index","status":"passed","statusDetails":{"known":false,"muted":false,"flaky":false},"stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1657351220233,"stop":1657351290368,"uuid":"2901ca90-cd02-44c1-a315-72484d111ea9","historyId":"4635e239e02272ad70738f4269a29b74","fullName":"com.hxk.tesngDemo.index.index","labels":[{"name":"package","value":"com.hxk.tesngDemo.index"},{"name":"testClass","value":"com.hxk.tesngDemo.index"},{"name":"testMethod","value":"index"},{"name":"parentSuite","value":"Default Suite"},{"name":"suite","value":"testng1.1"},{"name":"subSuite","value":"com.hxk.tesngDemo.index"},{"name":"host","value":"浪里个浪"},{"name":"thread","value":"2208@浪里个浪.main(1)"},{"name":"framework","value":"testng"},{"name":"language","value":"java"}],"links":[]}
+\ No newline at end of file
+Index: allure-results/37b66efe-97c9-4874-91cf-403127a227b3-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/37b66efe-97c9-4874-91cf-403127a227b3-container.json	(date 1657351510561)
++++ allure-results/37b66efe-97c9-4874-91cf-403127a227b3-container.json	(date 1657351510561)
+@@ -0,0 +1,1 @@
++{"uuid":"37b66efe-97c9-4874-91cf-403127a227b3","name":"Default Suite","children":["2cf4f51c-9a0b-4cb0-a1e6-fa0ef6839348"],"befores":[],"afters":[],"links":[],"start":1657351476040,"stop":1657351510560}
+\ No newline at end of file
+Index: allure-results/5654e1c6-4bf6-43fc-a694-42218ac08cd8-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/5654e1c6-4bf6-43fc-a694-42218ac08cd8-container.json	(date 1657351510559)
++++ allure-results/5654e1c6-4bf6-43fc-a694-42218ac08cd8-container.json	(date 1657351510559)
+@@ -0,0 +1,1 @@
++{"uuid":"5654e1c6-4bf6-43fc-a694-42218ac08cd8","name":"com.hxk.tesngDemo.index","children":["82ed3001-ce56-41e0-a9cb-6037ce8df907"],"befores":[],"afters":[],"links":[],"start":1657351476048,"stop":1657351510558}
+\ No newline at end of file
+Index: allure-results/a4adf084-dde5-41ac-ac84-0863fcf69de6-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/a4adf084-dde5-41ac-ac84-0863fcf69de6-container.json	(date 1657351780339)
++++ allure-results/a4adf084-dde5-41ac-ac84-0863fcf69de6-container.json	(date 1657351780339)
+@@ -0,0 +1,1 @@
++{"uuid":"a4adf084-dde5-41ac-ac84-0863fcf69de6","name":"testng1.1","children":["4e2fd8fa-05d1-4403-96c6-704427e8e01d"],"befores":[],"afters":[],"links":[],"start":1657351778975,"stop":1657351780335}
+\ No newline at end of file
+Index: allure-results/2cf4f51c-9a0b-4cb0-a1e6-fa0ef6839348-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/2cf4f51c-9a0b-4cb0-a1e6-fa0ef6839348-container.json	(date 1657351510557)
++++ allure-results/2cf4f51c-9a0b-4cb0-a1e6-fa0ef6839348-container.json	(date 1657351510557)
+@@ -0,0 +1,1 @@
++{"uuid":"2cf4f51c-9a0b-4cb0-a1e6-fa0ef6839348","name":"testng1.1","children":["82ed3001-ce56-41e0-a9cb-6037ce8df907"],"befores":[],"afters":[],"links":[],"start":1657351476043,"stop":1657351510551}
+\ No newline at end of file
+Index: allure-results/9baba780-2294-41c9-964f-f2122aa38a2f-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/9baba780-2294-41c9-964f-f2122aa38a2f-container.json	(date 1657351780343)
++++ allure-results/9baba780-2294-41c9-964f-f2122aa38a2f-container.json	(date 1657351780343)
+@@ -0,0 +1,1 @@
++{"uuid":"9baba780-2294-41c9-964f-f2122aa38a2f","name":"Default Suite","children":["a4adf084-dde5-41ac-ac84-0863fcf69de6"],"befores":[],"afters":[],"links":[],"start":1657351778972,"stop":1657351780342}
+\ No newline at end of file
+Index: allure-results/14283ed4-896d-4298-b1f6-04ed7be5fd42-container.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- allure-results/14283ed4-896d-4298-b1f6-04ed7be5fd42-container.json	(date 1657351780341)
++++ allure-results/14283ed4-896d-4298-b1f6-04ed7be5fd42-container.json	(date 1657351780341)
+@@ -0,0 +1,1 @@
++{"uuid":"14283ed4-896d-4298-b1f6-04ed7be5fd42","name":"com.hxk.tesngDemo.index","children":["4e2fd8fa-05d1-4403-96c6-704427e8e01d"],"befores":[],"afters":[],"links":[],"start":1657351778978,"stop":1657351780340}
+\ No newline at end of file
