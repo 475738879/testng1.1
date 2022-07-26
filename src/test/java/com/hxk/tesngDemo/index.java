@@ -31,7 +31,6 @@ public class index extends testbasic {
 //        entity.setContentType("application/json");
 //        httpGet.setEntity(entity);
 
-
         // 通过HttpClient来执行请求，获取一个响应结果
         CloseableHttpClient httpClient = HttpClients.createDefault();
 
