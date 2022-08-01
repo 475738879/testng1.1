@@ -26,7 +26,7 @@ import java.util.HashMap;
  * @analysis  login用例是登录接口——>(POST请求：带Body参数，不带Params参数，不带Headers参数，application/json格式)
  */
 
-public class login extends testbasic {
+public class Login extends testbasic {
 
     public String token;  //定义一个变量，用于存放登录后的token值
 

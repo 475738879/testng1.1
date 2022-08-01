@@ -1,39 +1,32 @@
 package com.hxk.tesngDemo;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.methodpackage.basic.testbasic;
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
-import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
 import java.util.HashMap;
 
-public class index extends testbasic {
+public class CourseRecord404 extends testbasic {
 
     @Test
-    public void index() throws Exception{
+    public void wo404() throws Exception{
 //        login login = new login();
 //        String token = login.login();
-        readToken readToken = new readToken();
+        ReadToken readToken = new ReadToken();
         String token = readToken.readTxt();
 
-        HttpGet httpGet=new HttpGet("https://api-test.liupinshuyuan.com/curricula/course/admin_video/index?id=&video_title=&page=1&per_page=20");
+        HttpGet httpGet=new HttpGet("https://api-test.liupinshuyuan.com/lptService/api/giving/course/record?userPhone=&userName=&curPage=1&pageSize=10");
         httpGet.addHeader("Authorization",token);
-//        StringEntity entity = new StringEntity(jsonParam.toString(),"utf-8");
-//        entity.setContentEncoding("UTF-8");
-//
-//        // Headers的Content-Type类型
-//        entity.setContentType("application/json");
-//        httpGet.setEntity(entity);
-
         // 通过HttpClient来执行请求，获取一个响应结果
         CloseableHttpClient httpClient = HttpClients.createDefault();
 
@@ -55,12 +48,15 @@ public class index extends testbasic {
         for(Header header : headerArray) {
             hm.put(header.getName(), header.getValue());
         }
-
         // 获取Content-Type的类型
         HttpEntity httpentity = response.getEntity();
         // 获取Response Body结果
         String str = EntityUtils.toString(httpentity, "utf-8");
-        System.out.println("index接口的Response Body结果为：" + str);
+        System.out.println("courseRecord接口的Response Body结果为：" + str);
+
+        JSONObject json = JSON.parseObject(str); //将str的结果转换成json格式
+        Object code = json.get("status");
+        System.out.println("状态码:"+code);
         // 添加断言其二，获取服务器响应的状态码
         Assert.assertEquals(statusCode, RESPNSE_STATUS_CODE_200, "服务器返回的状态码不是200");
         System.out.println("服务器响应的状态码为：" + statusCode);

@@ -1,7 +1,6 @@
-package com.hxk.tesngDemo;
+package com.hxk.tesngDemo.sale;
 
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
+import com.hxk.tesngDemo.ReadToken;
 import com.methodpackage.basic.testbasic;
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
@@ -16,17 +15,16 @@ import org.testng.annotations.Test;
 
 import java.util.HashMap;
 
-public class courseRecord404 extends testbasic {
+public class Nchannel_list extends testbasic {
 
     @Test
-    public void wo404() throws Exception{
-//        login login = new login();
-//        String token = login.login();
-        readToken readToken = new readToken();
+    public void nchannel_list() throws Exception{
+        ReadToken readToken = new ReadToken();
         String token = readToken.readTxt();
 
-        HttpGet httpGet=new HttpGet("https://api-test.liupinshuyuan.com/lptService/api/giving/course/record?userPhone=&userName=&curPage=1&pageSize=10");
+        HttpGet httpGet=new HttpGet("https://api-test.liupinshuyuan.com/sale/nchannel-list?page=1&per_page=20");
         httpGet.addHeader("Authorization",token);
+
         // 通过HttpClient来执行请求，获取一个响应结果
         CloseableHttpClient httpClient = HttpClients.createDefault();
 
@@ -48,15 +46,12 @@ public class courseRecord404 extends testbasic {
         for(Header header : headerArray) {
             hm.put(header.getName(), header.getValue());
         }
+
         // 获取Content-Type的类型
         HttpEntity httpentity = response.getEntity();
         // 获取Response Body结果
         String str = EntityUtils.toString(httpentity, "utf-8");
-        System.out.println("courseRecord接口的Response Body结果为：" + str);
-
-        JSONObject json = JSON.parseObject(str); //将str的结果转换成json格式
-        Object code = json.get("status");
-        System.out.println("状态码:"+code);
+        System.out.println("nchannel_list接口的Response Body结果为：" + str);
         // 添加断言其二，获取服务器响应的状态码
         Assert.assertEquals(statusCode, RESPNSE_STATUS_CODE_200, "服务器返回的状态码不是200");
         System.out.println("服务器响应的状态码为：" + statusCode);

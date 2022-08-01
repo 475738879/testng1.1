@@ -8,7 +8,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStreamReader;
 
-public class readToken {
+public class ReadToken {
     /**传入txt路径读取txt文件
      * @param
      * @return 返回读取到的内容

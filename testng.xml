@@ -8,6 +8,8 @@
         <!--如果有多个测试类，就写在这里，格式：包名.测试类名-->
         <packages>
             <package name="com.hxk.tesngDemo" />
+            <package name="com.hxk.tesngDemo.sale" />
+            <package name="com.hxk.tesngDemo.course" />
         </packages>
         <listeners>
             <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
