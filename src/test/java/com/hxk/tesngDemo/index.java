@@ -20,8 +20,11 @@ public class index extends testbasic {
 
     @Test
     public void index() throws Exception{
-        login login = new login();
-        String token = login.login();
+//        login login = new login();
+//        String token = login.login();
+        readToken readToken = new readToken();
+        String token = readToken.readTxt();
+
         HttpGet httpGet=new HttpGet("https://api-test.liupinshuyuan.com/curricula/course/admin_video/index?id=&video_title=&page=1&per_page=20");
         httpGet.addHeader("Authorization",token);
 //        StringEntity entity = new StringEntity(jsonParam.toString(),"utf-8");

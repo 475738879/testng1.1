@@ -83,7 +83,7 @@ public class login extends testbasic {
 
         // 获取Response Body结果
         String str = EntityUtils.toString(httpentity, "utf-8");
-//        writeTxt(str.toString()); //调用writeTxt()函数，将Response Body的结果保存到本地文本文件中
+        writeTxt(str.toString()); //调用writeTxt()函数，将Response Body的结果保存到本地文本文件中
         System.out.println("登录接口的Response Body结果为：" + str);
 
         // 登录成功后，获取服务器返回Body值里的token值
@@ -98,25 +98,25 @@ public class login extends testbasic {
     }
 
     // 将服务器的响应结果保存到本地文本文件中
-//    public static void  writeTxt(String str) throws Exception{
-//
-//        File file=new File("./Api_AutoTestCase");
-//        if(!file.exists()){ //如果文件夹不存在
-//            file.mkdir(); //创建文件夹
-//        }
-//        FileWriter fw = null;
-//        String path = "./Api_AutoTestCase/登录接口的Response Body值.txt";
-//        File f = new File(path);
-//        try {
-//            if (!f.exists()) {
-//                f.createNewFile();
-//            }
-//            fw = new FileWriter(f);
-//            BufferedWriter out = new BufferedWriter(fw);
-//            out.write(str.toString());
-//            out.close();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//    }
+    public static void  writeTxt(String str) throws Exception{
+
+        File file=new File("./Api_AutoTestCase");
+        if(!file.exists()){ //如果文件夹不存在
+            file.mkdir(); //创建文件夹
+        }
+        FileWriter fw = null;
+        String path = "./Api_AutoTestCase/token.txt";
+        File f = new File(path);
+        try {
+            if (!f.exists()) {
+                f.createNewFile();
+            }
+            fw = new FileWriter(f);
+            BufferedWriter out = new BufferedWriter(fw);
+            out.write(str.toString());
+            out.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-test-parameter">
-              <span class="suite-name border-failed">test-parameter</span>
+              <span class="suite-name border-passed">test-parameter</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-test-parameter" class="hide-methods failed suite-test-parameter"> (hide)</a> <!-- hide-methods failed suite-test-parameter -->
-                      <a href="#" panel-name="suite-test-parameter" class="show-methods failed suite-test-parameter"> (show)</a> <!-- show-methods failed suite-test-parameter -->
-                    </span>
-                    <div class="method-list-content failed suite-test-parameter">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-test-parameter" title="com.hxk.tesngDemo.courseRecord404" hash-for-method="wo404">wo404</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-test-parameter -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -124,6 +110,11 @@
                         <a href="#" class="method navigator-link" panel-name="suite-test-parameter" title="com.hxk.tesngDemo.TestDemo" hash-for-method="test1">test1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-test-parameter" title="com.hxk.tesngDemo.courseRecord404" hash-for-method="wo404">wo404</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-test-parameter -->
                   </li>
                 </ul>
@@ -136,9 +127,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-test-parameter" class="panel test-parameter">
-          <div class="suite-test-parameter-class-failed">
+          <div class="suite-test-parameter-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.hxk.tesngDemo.courseRecord404</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -147,27 +138,6 @@
                   <a name="wo404">
                   </a> <!-- wo404 -->
                   <span class="method-name">wo404</span>
-                  <div class="stack-trace">java.lang.AssertionError: 服务器返回的状态码不是200 expected [200] but found [404]
-	at com.hxk.tesngDemo.courseRecord404.wo404(courseRecord404.java:33)
-	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-test-parameter-class-failed -->
-          <div class="suite-test-parameter-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.hxk.tesngDemo.TestDemo</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="test1">
-                  </a> <!-- test1 -->
-                  <span class="method-name">test1</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -187,6 +157,21 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-test-parameter-class-passed -->
+          <div class="suite-test-parameter-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.hxk.tesngDemo.TestDemo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-test-parameter-class-passed -->
         </div> <!-- panel test-parameter -->
         <div panel-name="test-xml-test-parameter" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -197,6 +182,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;test-parameter&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.JUnitXMLReporter&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;examplel&quot;&gt;
     &lt;packages&gt;
       &lt;package name=&quot;com.hxk.tesngDemo&quot;/&gt;
@@ -205,6 +193,7 @@
       &lt;class name=&quot;com.hxk.tesngDemo.courseRecord404&quot;/&gt;
       &lt;class name=&quot;com.hxk.tesngDemo.index&quot;/&gt;
       &lt;class name=&quot;com.hxk.tesngDemo.login&quot;/&gt;
+      &lt;class name=&quot;com.hxk.tesngDemo.readToken&quot;/&gt;
       &lt;class name=&quot;com.hxk.tesngDemo.TestDemo&quot;/&gt;
       &lt;class name=&quot;com.hxk.tesngDemo.TestDemo2&quot;/&gt;
     &lt;/classes&gt;
@@ -220,7 +209,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">examplel (5 classes)</span>
+                <span class="test-name">examplel (6 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -250,20 +239,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'wo404')
 data.setCell(0, 2, 'com.hxk.tesngDemo.courseRecord404')
-data.setCell(0, 3, 1335);
+data.setCell(0, 3, 3755);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'index')
 data.setCell(1, 2, 'com.hxk.tesngDemo.index')
-data.setCell(1, 3, 414);
+data.setCell(1, 3, 225);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'test1')
 data.setCell(2, 2, 'com.hxk.tesngDemo.TestDemo')
-data.setCell(2, 3, 2);
+data.setCell(2, 3, 3);
 window.suiteTableData['test-parameter']= { tableData: data, tableDiv: 'times-div-test-parameter'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-test-parameter">
               </div> <!-- times-div-test-parameter -->
             </div> <!-- times-div -->
@@ -298,8 +287,6 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.hxk.tesngDemo.courseRecord404</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">wo404</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
@@ -308,14 +295,14 @@ return data;
               <div class="chronological-class-name">com.hxk.tesngDemo.TestDemo</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">test1</span>
-                <span class="method-start">1341 ms</span>
+                <span class="method-start">3760 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.hxk.tesngDemo.index</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">index</span>
-                <span class="method-start">1346 ms</span>
+                <span class="method-start">3765 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
