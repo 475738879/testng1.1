@@ -1,5 +1,7 @@
 package com.hxk.tesngDemo;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.methodpackage.basic.testbasic;
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
@@ -49,6 +51,10 @@ public class courseRecord404 extends testbasic {
         HttpEntity httpentity = response.getEntity();
         // 获取Response Body结果
         String str = EntityUtils.toString(httpentity, "utf-8");
-        System.out.println("index接口的Response Body结果为：" + str);
+        System.out.println("courseRecord接口的Response Body结果为：" + str);
+
+        JSONObject json = JSON.parseObject(str); //将str的结果转换成json格式
+        Object code = json.get("status");
+        System.out.println("状态码:"+code);
     }
 }

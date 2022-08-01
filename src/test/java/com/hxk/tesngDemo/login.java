@@ -90,7 +90,7 @@ public class login extends testbasic {
         JSONObject json = JSON.parseObject(str); //将str的结果转换成json格式
         JSONObject data = json.getJSONObject("data");
         token = data.getJSONObject("tokenInfo").getString("refreshToken");
-        System.out.println("登录成功后的token值为：" + token);
+        System.out.println("login登录成功后的token值为：" + token);
 
         return token;
         // 关闭
