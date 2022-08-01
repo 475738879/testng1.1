@@ -30,11 +30,9 @@ public class courseRecord404 extends testbasic {
         // 通过HttpClient来执行请求，获取一个响应结果
         CloseableHttpClient httpClient = HttpClients.createDefault();
 
-        // 添加断言，获取服务器响应的状态码
+        // 添加断言其一，获取服务器响应的状态码
         CloseableHttpResponse response = httpClient.execute(httpGet);
         int statusCode = response.getStatusLine().getStatusCode();
-//        Assert.assertEquals(statusCode, RESPNSE_STATUS_CODE_200, "服务器返回的状态码不是200");
-        System.out.println("服务器响应的状态码为：" + statusCode);
 
         // 设置超时时间
         RequestConfig requestConfig = RequestConfig.custom()
@@ -59,5 +57,8 @@ public class courseRecord404 extends testbasic {
         JSONObject json = JSON.parseObject(str); //将str的结果转换成json格式
         Object code = json.get("status");
         System.out.println("状态码:"+code);
+        // 添加断言其二，获取服务器响应的状态码
+        Assert.assertEquals(statusCode, RESPNSE_STATUS_CODE_200, "服务器返回的状态码不是200");
+        System.out.println("服务器响应的状态码为：" + statusCode);
     }
 }

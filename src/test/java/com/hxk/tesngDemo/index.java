@@ -37,11 +37,9 @@ public class index extends testbasic {
         // 通过HttpClient来执行请求，获取一个响应结果
         CloseableHttpClient httpClient = HttpClients.createDefault();
 
-        // 添加断言，获取服务器响应的状态码
+        // 添加断言其一，获取服务器响应的状态码
         CloseableHttpResponse response = httpClient.execute(httpGet);
         int statusCode = response.getStatusLine().getStatusCode();
-        Assert.assertEquals(statusCode, RESPNSE_STATUS_CODE_200, "服务器返回的状态码不是200");
-        System.out.println("服务器响应的状态码为：" + statusCode);
 
         // 设置超时时间
         RequestConfig requestConfig = RequestConfig.custom()
@@ -63,5 +61,8 @@ public class index extends testbasic {
         // 获取Response Body结果
         String str = EntityUtils.toString(httpentity, "utf-8");
         System.out.println("index接口的Response Body结果为：" + str);
+        // 添加断言其二，获取服务器响应的状态码
+        Assert.assertEquals(statusCode, RESPNSE_STATUS_CODE_200, "服务器返回的状态码不是200");
+        System.out.println("服务器响应的状态码为：" + statusCode);
     }
 }
