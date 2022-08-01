@@ -9,5 +9,8 @@
         <packages>
             <package name="com.hxk.tesngDemo" />
         </packages>
+        <listeners>
+            <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+        </listeners>
     </test>
 </suite>
