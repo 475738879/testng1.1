@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="0.191">
+           time="0.774">
   <properties />
   
   
-            <testcase name="doneUpload" time="0.191" classname="com.hxk.tesngDemo.course.DoneUpload" />
+            <testcase name="doneUpload" time="0.774" classname="com.hxk.tesngDemo.course.DoneUpload" />
       
 </testsuite>

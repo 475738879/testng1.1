@@ -3,6 +3,7 @@ package com.hxk.tesngDemo.course;
 import com.alibaba.fastjson.JSONObject;
 import com.hxk.tesngDemo.ReadToken;
 import com.methodpackage.basic.testbasic;
+import com.methodpackage.course.DoneUpload;
 import com.methodpackage.course.VideoList;
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
@@ -22,12 +23,13 @@ import java.util.HashMap;
 
 
 public class VideoDel extends testbasic {
-
-    com.methodpackage.course.VideoList videoList = new VideoList();
-    int id =videoList.videolist();
-
     @Test
-    public void videoDel(int id)throws Exception{
+    public void videoDel()throws Exception{
+        com.methodpackage.course.DoneUpload doneUpload = new DoneUpload();
+        doneUpload.doneUpload();
+        com.methodpackage.course.VideoList videoList = new VideoList();
+        String id =videoList.videolist();
+
         ReadToken readToken = new ReadToken();
         String token = readToken.readTxt();
         // 通过HttpPost来发送post请求，带Body参数

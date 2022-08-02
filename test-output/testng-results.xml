@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="1" total="8" passed="5">
+<testng-results skipped="0" failed="1" ignored="1" total="8" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="test-parameter" duration-ms="1920" started-at="2022-08-01T09:02:51Z" finished-at="2022-08-01T09:02:53Z">
+  <suite name="test-parameter" duration-ms="3166" started-at="2022-08-02T02:24:14Z" finished-at="2022-08-02T02:24:18Z">
     <groups>
     </groups>
-    <test name="examplel" duration-ms="1920" started-at="2022-08-01T09:02:51Z" finished-at="2022-08-01T09:02:53Z">
+    <test name="examplel" duration-ms="3166" started-at="2022-08-02T02:24:14Z" finished-at="2022-08-02T02:24:18Z">
       <class name="com.hxk.tesngDemo.sale.Nchannel_list">
-        <test-method status="PASS" signature="nchannel_list()[pri:0, instance:com.hxk.tesngDemo.sale.Nchannel_list@3bbc39f8]" name="nchannel_list" duration-ms="341" started-at="2022-08-01T09:02:53Z" finished-at="2022-08-01T09:02:53Z">
+        <test-method status="PASS" signature="nchannel_list()[pri:0, instance:com.hxk.tesngDemo.sale.Nchannel_list@5ea434c8]" name="nchannel_list" duration-ms="284" started-at="2022-08-02T02:24:15Z" finished-at="2022-08-02T02:24:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nchannel_list -->
       </class> <!-- com.hxk.tesngDemo.sale.Nchannel_list -->
-      <class name="com.hxk.tesngDemo.TestDemo">
-        <test-method status="PASS" signature="test1()[pri:0, instance:com.hxk.tesngDemo.TestDemo@5ea434c8]" name="test1" duration-ms="1" started-at="2022-08-01T09:02:53Z" finished-at="2022-08-01T09:02:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-      </class> <!-- com.hxk.tesngDemo.TestDemo -->
       <class name="com.hxk.tesngDemo.CourseRecord404">
-        <test-method status="FAIL" signature="wo404()[pri:0, instance:com.hxk.tesngDemo.CourseRecord404@67e2d983]" name="wo404" duration-ms="726" started-at="2022-08-01T09:02:52Z" finished-at="2022-08-01T09:02:52Z">
+        <test-method status="FAIL" signature="wo404()[pri:0, instance:com.hxk.tesngDemo.CourseRecord404@4de5031f]" name="wo404" duration-ms="651" started-at="2022-08-02T02:24:15Z" finished-at="2022-08-02T02:24:15Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[服务器返回的状态码不是200 expected [200] but found [404]]]>
@@ -63,62 +57,32 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)
           </reporter-output>
         </test-method> <!-- wo404 -->
       </class> <!-- com.hxk.tesngDemo.CourseRecord404 -->
+      <class name="com.hxk.tesngDemo.TestDemo">
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.hxk.tesngDemo.TestDemo@5d47c63f]" name="test1" duration-ms="16" started-at="2022-08-02T02:24:15Z" finished-at="2022-08-02T02:24:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+      </class> <!-- com.hxk.tesngDemo.TestDemo -->
       <class name="com.hxk.tesngDemo.course.DoneUpload">
-        <test-method status="PASS" signature="doneUpload()[pri:0, instance:com.hxk.tesngDemo.course.DoneUpload@4ae3c1cd]" name="doneUpload" duration-ms="191" started-at="2022-08-01T09:02:53Z" finished-at="2022-08-01T09:02:53Z">
+        <test-method status="PASS" signature="doneUpload()[pri:0, instance:com.hxk.tesngDemo.course.DoneUpload@3bbc39f8]" name="doneUpload" duration-ms="774" started-at="2022-08-02T02:24:16Z" finished-at="2022-08-02T02:24:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doneUpload -->
       </class> <!-- com.hxk.tesngDemo.course.DoneUpload -->
       <class name="com.hxk.tesngDemo.course.VideoDel">
-        <test-method status="FAIL" signature="videoDel(java.lang.String)[pri:0, instance:com.hxk.tesngDemo.course.VideoDel@29f69090]" name="videoDel" duration-ms="0" started-at="2022-08-01T09:02:53Z" finished-at="2022-08-01T09:02:53Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Cannot inject @Test annotated Method [videoDel] with [class java.lang.String].
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Cannot inject @Test annotated Method [videoDel] with [class java.lang.String].
-For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:407)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
-at org.testng.internal.Parameters.createParameters(Parameters.java:635)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:769)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
-at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="videoDel()[pri:0, instance:com.hxk.tesngDemo.course.VideoDel@4ae3c1cd]" name="videoDel" duration-ms="784" started-at="2022-08-02T02:24:17Z" finished-at="2022-08-02T02:24:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- videoDel -->
       </class> <!-- com.hxk.tesngDemo.course.VideoDel -->
       <class name="com.hxk.tesngDemo.course.VideoList">
-        <test-method status="PASS" signature="index()[pri:0, instance:com.hxk.tesngDemo.course.VideoList@568bf312]" name="index" duration-ms="236" started-at="2022-08-01T09:02:52Z" finished-at="2022-08-01T09:02:53Z">
+        <test-method status="PASS" signature="index()[pri:0, instance:com.hxk.tesngDemo.course.VideoList@29f69090]" name="index" duration-ms="224" started-at="2022-08-02T02:24:15Z" finished-at="2022-08-02T02:24:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- index -->
       </class> <!-- com.hxk.tesngDemo.course.VideoList -->
       <class name="com.hxk.tesngDemo.Index">
-        <test-method status="PASS" signature="index()[pri:0, instance:com.hxk.tesngDemo.Index@5d47c63f]" name="index" duration-ms="211" started-at="2022-08-01T09:02:53Z" finished-at="2022-08-01T09:02:53Z">
+        <test-method status="PASS" signature="index()[pri:0, instance:com.hxk.tesngDemo.Index@67e2d983]" name="index" duration-ms="230" started-at="2022-08-02T02:24:17Z" finished-at="2022-08-02T02:24:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- index -->
