@@ -1,9 +1,8 @@
-package com.hxk.tesngDemo.course;
+package com.methodpackage.course;
 
 import com.alibaba.fastjson.JSONObject;
 import com.hxk.tesngDemo.ReadToken;
 import com.methodpackage.basic.testbasic;
-import com.methodpackage.course.VideoList;
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.config.RequestConfig;
@@ -14,30 +13,21 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.HashMap;
 
-
-public class VideoDel extends testbasic {
-
-    com.methodpackage.course.VideoList videoList = new VideoList();
-    int id =videoList.videolist();
-
-    @Test
-    public void videoDel(int id)throws Exception{
+public class DoneUpload extends testbasic {
+    public void doneUpload()throws Exception{
         ReadToken readToken = new ReadToken();
         String token = readToken.readTxt();
         // 通过HttpPost来发送post请求，带Body参数
-        HttpPost httpPost = new HttpPost("https://api-test.liupinshuyuan.com/curricula/course/tcvideo/videoDel");
+        HttpPost httpPost = new HttpPost("https://api-test.liupinshuyuan.com/curricula/course/tcvideo/doneUpload");
         httpPost.addHeader("Authorization",token);
-        ArrayList arrayList = new ArrayList();
         JSONObject jsonParam = new JSONObject();
-        arrayList.add(0,id);
-        jsonParam.put("id", arrayList);
-
+        jsonParam.put("file_type", "image");
+        jsonParam.put("line_type", 1);
+        jsonParam.put("name", "书法基础抽奖.png");
+        jsonParam.put("url", "xsjy-1254153797.cos.ap-shanghai.myqcloud.com/edu/courseware/pc/2022/08/01/%E4%B9%A6%E6%B3%95%E5%9F%BA%E7%A1%80%E6%8A%BD%E5%A5%96.png");
         //添加headers内容
         httpPost.addHeader("system","eduOnline");
 
@@ -79,9 +69,14 @@ public class VideoDel extends testbasic {
         HttpEntity httpentity = response.getEntity();
         // 获取Response Body结果
         String str = EntityUtils.toString(httpentity, "utf-8");
-        System.out.println("VideoDel接口的Response Body结果为：" + str);
+        System.out.println("doneUpload接口的Response Body结果为：" + str);
         // 添加断言其二，获取服务器响应的状态码
         Assert.assertEquals(statusCode, RESPNSE_STATUS_CODE_200, "服务器返回的状态码不是200");
         System.out.println("服务器响应的状态码为：" + statusCode);
+
+        com.methodpackage.course.VideoList videoList = new VideoList();
+        String id =videoList.videolist();
+        com.methodpackage.course.VideoDel videoDel = new VideoDel();
+        videoDel.videoDel(id);
     }
 }

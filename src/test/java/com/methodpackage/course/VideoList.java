@@ -54,10 +54,10 @@ public class VideoList extends testbasic {
         HttpEntity httpentity = response.getEntity();
         // 获取Response Body结果
         String str = EntityUtils.toString(httpentity, "utf-8");
-        System.out.println("index接口的Response Body结果为：" + str);
+//        System.out.println("index接口的Response Body结果为：" + str);
         // 添加断言其二，获取服务器响应的状态码
-        Assert.assertEquals(statusCode, RESPNSE_STATUS_CODE_200, "服务器返回的状态码不是200");
-        System.out.println("服务器响应的状态码为：" + statusCode);
+//        Assert.assertEquals(statusCode, RESPNSE_STATUS_CODE_200, "服务器返回的状态码不是200");
+//        System.out.println("服务器响应的状态码为：" + statusCode);
 
         JSONObject json = JSON.parseObject(str); //将str的结果转换成json格式
         JSONObject data = json.getJSONObject("data");

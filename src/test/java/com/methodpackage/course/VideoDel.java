@@ -14,6 +14,7 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 import org.testng.Assert;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class VideoDel extends testbasic {
@@ -24,8 +25,10 @@ public class VideoDel extends testbasic {
         // 通过HttpPost来发送post请求，带Body参数
         HttpPost httpPost = new HttpPost("https://api-test.liupinshuyuan.com/curricula/course/tcvideo/videoDel");
         httpPost.addHeader("Authorization",token);
+        ArrayList arrayList = new ArrayList();
         JSONObject jsonParam = new JSONObject();
-        jsonParam.put("id", id);
+        arrayList.add(0,id);
+        jsonParam.put("id", arrayList);
         //添加headers内容
         httpPost.addHeader("system","eduOnline");
 
@@ -67,9 +70,9 @@ public class VideoDel extends testbasic {
         HttpEntity httpentity = response.getEntity();
         // 获取Response Body结果
         String str = EntityUtils.toString(httpentity, "utf-8");
-        System.out.println("index接口的Response Body结果为：" + str);
+//        System.out.println("index接口的Response Body结果为：" + str);
         // 添加断言其二，获取服务器响应的状态码
-        Assert.assertEquals(statusCode, RESPNSE_STATUS_CODE_200, "服务器返回的状态码不是200");
-        System.out.println("服务器响应的状态码为：" + statusCode);
+//        Assert.assertEquals(statusCode, RESPNSE_STATUS_CODE_200, "服务器返回的状态码不是200");
+//        System.out.println("服务器响应的状态码为：" + statusCode);
     }
 }
