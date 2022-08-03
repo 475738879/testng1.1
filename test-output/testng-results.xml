@@ -2,18 +2,24 @@
 <testng-results skipped="0" failed="1" ignored="2" total="8" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="test-parameter" duration-ms="3355" started-at="2022-08-03T01:35:47Z" finished-at="2022-08-03T01:35:51Z">
+  <suite name="test-parameter" duration-ms="3053" started-at="2022-08-03T05:33:03Z" finished-at="2022-08-03T05:33:06Z">
     <groups>
     </groups>
-    <test name="examplel" duration-ms="3355" started-at="2022-08-03T01:35:47Z" finished-at="2022-08-03T01:35:51Z">
+    <test name="examplel" duration-ms="3053" started-at="2022-08-03T05:33:03Z" finished-at="2022-08-03T05:33:06Z">
       <class name="com.hxk.online.sale.Nchannel_list">
-        <test-method status="PASS" signature="nchannel_list()[pri:0, instance:com.hxk.online.sale.Nchannel_list@5d47c63f]" name="nchannel_list" duration-ms="417" started-at="2022-08-03T01:35:49Z" finished-at="2022-08-03T01:35:49Z">
+        <test-method status="PASS" signature="nchannel_list()[pri:0, instance:com.hxk.online.sale.Nchannel_list@5ae9a829]" name="nchannel_list" duration-ms="298" started-at="2022-08-03T05:33:04Z" finished-at="2022-08-03T05:33:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nchannel_list -->
       </class> <!-- com.hxk.online.sale.Nchannel_list -->
+      <class name="com.hxk.online.course.VideoList">
+        <test-method status="PASS" signature="index()[pri:0, instance:com.hxk.online.course.VideoList@7ac7a4e4]" name="index" duration-ms="255" started-at="2022-08-03T05:33:04Z" finished-at="2022-08-03T05:33:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- index -->
+      </class> <!-- com.hxk.online.course.VideoList -->
       <class name="com.hxk.online.CourseRecord404">
-        <test-method status="FAIL" signature="wo404()[pri:0, instance:com.hxk.online.CourseRecord404@4de5031f]" name="wo404" duration-ms="853" started-at="2022-08-03T01:35:47Z" finished-at="2022-08-03T01:35:48Z">
+        <test-method status="FAIL" signature="wo404()[pri:0, instance:com.hxk.online.CourseRecord404@402f32ff]" name="wo404" duration-ms="936" started-at="2022-08-03T05:33:03Z" finished-at="2022-08-03T05:33:04Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[服务器返回的状态码不是200 expected [200] but found [404]]]>
@@ -57,26 +63,20 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)
           </reporter-output>
         </test-method> <!-- wo404 -->
       </class> <!-- com.hxk.online.CourseRecord404 -->
-      <class name="com.hxk.online.course.VideoList">
-        <test-method status="PASS" signature="index()[pri:0, instance:com.hxk.online.course.VideoList@4ae3c1cd]" name="index" duration-ms="238" started-at="2022-08-03T01:35:48Z" finished-at="2022-08-03T01:35:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- index -->
-      </class> <!-- com.hxk.online.course.VideoList -->
       <class name="com.hxk.online.course.VideoDel">
-        <test-method status="PASS" signature="videoDel()[pri:0, instance:com.hxk.online.course.VideoDel@3bbc39f8]" name="videoDel" duration-ms="632" started-at="2022-08-03T01:35:50Z" finished-at="2022-08-03T01:35:51Z">
+        <test-method status="PASS" signature="videoDel()[pri:0, instance:com.hxk.online.course.VideoDel@548b7f67]" name="videoDel" duration-ms="651" started-at="2022-08-03T05:33:05Z" finished-at="2022-08-03T05:33:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- videoDel -->
       </class> <!-- com.hxk.online.course.VideoDel -->
       <class name="com.hxk.online.course.DoneUpload">
-        <test-method status="PASS" signature="doneUpload()[pri:0, instance:com.hxk.online.course.DoneUpload@5ea434c8]" name="doneUpload" duration-ms="783" started-at="2022-08-03T01:35:49Z" finished-at="2022-08-03T01:35:50Z">
+        <test-method status="PASS" signature="doneUpload()[pri:0, instance:com.hxk.online.course.DoneUpload@6d8a00e3]" name="doneUpload" duration-ms="637" started-at="2022-08-03T05:33:04Z" finished-at="2022-08-03T05:33:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doneUpload -->
       </class> <!-- com.hxk.online.course.DoneUpload -->
       <class name="com.hxk.online.Index">
-        <test-method status="PASS" signature="index()[pri:0, instance:com.hxk.online.Index@67e2d983]" name="index" duration-ms="211" started-at="2022-08-03T01:35:50Z" finished-at="2022-08-03T01:35:50Z">
+        <test-method status="PASS" signature="index()[pri:0, instance:com.hxk.online.Index@573f2bb1]" name="index" duration-ms="246" started-at="2022-08-03T05:33:05Z" finished-at="2022-08-03T05:33:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- index -->

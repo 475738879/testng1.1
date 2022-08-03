@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="0.853">
+           time="0.936">
   <properties />
-            <testcase name="wo404" time="0.853" classname="com.hxk.online.CourseRecord404">
+            <testcase name="wo404" time="0.936" classname="com.hxk.online.CourseRecord404">
                 <failure type="java.lang.AssertionError"
                   message="服务器返回的状态码不是200 expected [200] but found [404]"
               >
