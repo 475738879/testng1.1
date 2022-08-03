@@ -1,5 +1,6 @@
-package com.hxk.tesngDemo;
+package com.hxk.online.sale;
 
+import com.hxk.online.ReadToken;
 import com.methodpackage.basic.testbasic;
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
@@ -14,23 +15,15 @@ import org.testng.annotations.Test;
 
 import java.util.HashMap;
 
-public class Index extends testbasic {
+public class Nchannel_list extends testbasic {
 
     @Test
-    public void index() throws Exception{
-//        login login = new login();
-//        String token = login.login();
+    public void nchannel_list() throws Exception{
         ReadToken readToken = new ReadToken();
         String token = readToken.readTxt();
 
-        HttpGet httpGet=new HttpGet("https://api-test.liupinshuyuan.com/curricula/course/admin_video/index?id=&video_title=&page=1&per_page=20");
+        HttpGet httpGet=new HttpGet("https://api-test.liupinshuyuan.com/sale/nchannel-list?page=1&per_page=20");
         httpGet.addHeader("Authorization",token);
-//        StringEntity entity = new StringEntity(jsonParam.toString(),"utf-8");
-//        entity.setContentEncoding("UTF-8");
-//
-//        // Headers的Content-Type类型
-//        entity.setContentType("application/json");
-//        httpGet.setEntity(entity);
 
         // 通过HttpClient来执行请求，获取一个响应结果
         CloseableHttpClient httpClient = HttpClients.createDefault();
@@ -58,7 +51,7 @@ public class Index extends testbasic {
         HttpEntity httpentity = response.getEntity();
         // 获取Response Body结果
         String str = EntityUtils.toString(httpentity, "utf-8");
-        System.out.println("index接口的Response Body结果为：" + str);
+        System.out.println("nchannel_list接口的Response Body结果为：" + str);
         // 添加断言其二，获取服务器响应的状态码
         Assert.assertEquals(statusCode, RESPNSE_STATUS_CODE_200, "服务器返回的状态码不是200");
         System.out.println("服务器响应的状态码为：" + statusCode);

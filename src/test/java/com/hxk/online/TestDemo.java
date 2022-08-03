@@ -1,9 +1,9 @@
-package com.hxk.tesngDemo;
+package com.hxk.online;
 
 import org.testng.annotations.Test;
 
 public class TestDemo {
-    @Test(enabled = true)
+    @Test(enabled = false)
     public void test1(){
         System.out.println("test1_1");
     }

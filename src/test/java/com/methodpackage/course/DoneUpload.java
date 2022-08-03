@@ -1,7 +1,7 @@
 package com.methodpackage.course;
 
 import com.alibaba.fastjson.JSONObject;
-import com.hxk.tesngDemo.ReadToken;
+import com.hxk.online.ReadToken;
 import com.methodpackage.basic.testbasic;
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;

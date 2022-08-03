@@ -1,4 +1,4 @@
-package com.hxk.tesngDemo;
+package com.hxk.online;
 
 import org.testng.annotations.Test;
 

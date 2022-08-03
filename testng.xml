@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- parallel="packages" 并行执行-->
 <suite name="test-parameter">
     <test name="examplel">
 <!--        <classes>-->
-<!--            <class name="com.hxk.tesngDemo.TestDemo"/>-->
-<!--            <class name="com.hxk.tesngDemo.TestDemo2"/>-->
+<!--            <class name="com.hxk.onlinestDemo"/>-->
+<!--            <class name="com.hxk.onlinestDemo2"/>-->
 <!--         </classes>-->
         <!--如果有多个测试类，就写在这里，格式：包名.测试类名-->
         <packages>
-            <package name="com.hxk.tesngDemo" />
-            <package name="com.hxk.tesngDemo.sale" />
-            <package name="com.hxk.tesngDemo.course" />
+            <package name="com.hxk.online" />
+            <package name="com.hxk.online.sale" />
+            <package name="com.hxk.online.course" />
         </packages>
+
         <listeners>
             <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
         </listeners>

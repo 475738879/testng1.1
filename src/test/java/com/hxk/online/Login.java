@@ -1,11 +1,10 @@
-package com.hxk.tesngDemo;
+package com.hxk.online;
 
 import com.alibaba.fastjson.JSON;
 import com.methodpackage.basic.testbasic;
 import org.apache.http.Header;
 import org.apache.http.client.config.RequestConfig;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 import com.alibaba.fastjson.JSONObject;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;

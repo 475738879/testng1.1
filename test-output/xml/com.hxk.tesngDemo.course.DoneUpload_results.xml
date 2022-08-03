@@ -8,6 +8,6 @@
   <properties />
   
   
-            <testcase name="doneUpload" time="0.774" classname="com.hxk.tesngDemo.course.DoneUpload" />
+            <testcase name="doneUpload" time="0.774" classname="com.hxk.online.course.DoneUpload" />
       
 </testsuite>

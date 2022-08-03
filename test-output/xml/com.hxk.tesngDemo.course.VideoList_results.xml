@@ -8,6 +8,6 @@
   <properties />
   
   
-            <testcase name="index" time="0.224" classname="com.hxk.tesngDemo.course.VideoList" />
+            <testcase name="index" time="0.224" classname="com.hxk.online.course.VideoList" />
       
 </testsuite>

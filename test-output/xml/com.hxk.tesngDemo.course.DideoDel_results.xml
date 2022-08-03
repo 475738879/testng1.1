@@ -6,7 +6,7 @@
            skipped="0"
            time="0.000">
   <properties />
-            <testcase name="videoDel" time="0.000" classname="com.hxk.tesngDemo.course.VideoDel">
+            <testcase name="videoDel" time="0.000" classname="com.hxk.online.course.VideoDel">
                 <failure type="org.testng.TestNGException"
                   message="
 Cannot inject @Test annotated Method [videoDel] with [class java.lang.String].
