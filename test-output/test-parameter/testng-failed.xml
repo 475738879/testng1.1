@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [test-parameter]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="examplel(failed)">
+    <classes>
+      <class name="com.hxk.online.CourseRecord404">
+        <methods>
+          <include name="wo404"/>
+        </methods>
+      </class> <!-- com.hxk.online.CourseRecord404 -->
+    </classes>
+  </test> <!-- examplel(failed) -->
+</suite> <!-- Failed suite [test-parameter] -->

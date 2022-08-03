@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="examplel"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.417">
+  <properties />
+  
+  
+            <testcase name="nchannel_list" time="0.417" classname="com.hxk.online.sale.Nchannel_list" />
+      
+</testsuite>

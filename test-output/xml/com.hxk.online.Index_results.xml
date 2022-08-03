@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="examplel"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.211">
+  <properties />
+  
+  
+            <testcase name="index" time="0.211" classname="com.hxk.online.Index" />
+      
+</testsuite>
